@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: ton-identifiant-github/nom-de-ton-depot # À modifier plus tard
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  # Collection pour gérer tes prestations (Admin, RH, Com)
+  - name: "services"
+    label: "Pôles & Services"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre du Pôle", name: "title", widget: "string" }
+      - { label: "Catégorie", name: "category", widget: "select", options: ["Assistance Administrative", "Ressources Humaines", "Communication"] }
+      - { label: "Image / Illustration", name: "image", widget: "image", required: false }
+      - { label: "Résumé court", name: "description", widget: "text" }
+      - { label: "Prestations incluses", name: "features", widget: "list" }
+      - { label: "Tarif indicatif", name: "price", widget: "string", required: false }
+      - { label: "Description détaillée", name: "body", widget: "markdown" }
+
+  # Collection pour gérer ton blog
+  - name: "blog"
+    label: "Articles de Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre de l'article", name: "title", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime" }
+      - { label: "Thématique", name: "tag", widget: "select", options: ["Conseil Admin", "Organisation RH", "Astuces Com", "Actualités"] }
+      - { label: "Image à la une", name: "image", widget: "image", required: false }
+      - { label: "Chapeau / Introduction", name: "excerpt", widget: "text" }
+      - { label: "Contenu de l'article", name: "body", widget: "markdown" }
