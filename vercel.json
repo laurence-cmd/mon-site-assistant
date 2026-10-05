@@ -1,12 +1,12 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/admin",
-      "destination": "/admin/index.html"
+      "src": "/admin",
+      "dest": "/admin/index.html"
     },
     {
-      "source": "/admin/(.*)",
-      "destination": "/admin/$1"
+      "src": "/admin/(.*)",
+      "dest": "/admin/$1"
     }
   ]
 }
