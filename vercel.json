@@ -2,12 +2,16 @@
   "cleanUrls": true,
   "rewrites": [
     {
+      "source": "/admin/config.yml",
+      "destination": "/admin/config.yml"
+    },
+    {
       "source": "/admin",
       "destination": "/admin/index.html"
     },
     {
-      "source": "/admin/(.*)",
-      "destination": "/admin/$1"
+      "source": "/admin/",
+      "destination": "/admin/index.html"
     }
   ]
 }
