@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: ton-identifiant-github/nom-de-ton-depot # À modifier plus tard
+  repo: laurence-cmd/mon-site-assistant
   branch: main
+  site_domain: synergieshumaines.com
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
