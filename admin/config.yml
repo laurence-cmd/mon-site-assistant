@@ -2,7 +2,8 @@ backend:
   name: github
   repo: laurence-cmd/mon-site-assistant
   branch: main
-  site_domain: synergieshumaines.com
+  base_url: https://synergieshumaines.com
+  auth_endpoint: /api/auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
