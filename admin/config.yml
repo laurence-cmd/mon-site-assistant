@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: laurence-cmd/mon-site-assistant
+  name: git-gateway
   branch: main
-  base_url: https://decap-bridge.vercel.app
-  auth_endpoint: /oauth/authorize
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
