@@ -1,0 +1,792 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Automatisation &amp; IA - Synergies Humaines | Laurence BEDAULT</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "sage-accent": "#435450", "sky-cyan": "#4A90E2", "error": "#ba1a1a", "tertiary-fixed": "#d4e3ff", "secondary-fixed": "#dae2fd", "on-tertiary-fixed": "#001c39", "surface-variant": "#e0e3e5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#004883", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "primary-container": "#be543c", "outline-variant": "#ddc0ba", "on-secondary-fixed-variant": "#3f465c", "primary": "#9e3c26", "outline": "#8a726c", "on-primary-fixed-variant": "#822714", "tertiary": "#005da7", "surface": "#f7f9fb", "bg-muted": "#F1F5F9", "background": "#f7f9fb", "navy-deep": "#0F172A", "on-secondary-fixed": "#131b2e", "surface-tint": "#a13e28", "warm-sand": "#D99B82", "on-primary-fixed": "#3d0600", "surface-container-highest": "#e0e3e5", "on-primary": "#ffffff", "on-tertiary-container": "#fdfcff", "on-primary-container": "#fffbff", "on-surface-variant": "#57423d", "on-error": "#ffffff", "inverse-primary": "#ffb4a3", "on-secondary-container": "#5c647a", "surface-container-high": "#e6e8ea", "secondary-fixed-dim": "#bec6e0", "secondary-container": "#dae2fd", "bg-canvas": "#F8FAFC", "navy-surface": "#1C2A3A", "error-container": "#ffdad6", "slate-border": "#E2E8F0", "secondary": "#565e74", "surface-container-low": "#f2f4f6", "on-background": "#191c1e", "on-secondary": "#ffffff", "primary-fixed": "#ffdad2", "surface-dim": "#d8dadc", "on-surface": "#191c1e", "primary-fixed-dim": "#ffb4a3", "inverse-on-surface": "#eff1f3", "tertiary-container": "#2976c7", "surface-bright": "#f7f9fb", "tertiary-fixed-dim": "#a4c9ff", "coral-cta": "#E06D53", "inverse-surface": "#2d3133", "sky-cyan-light": "#5BB2E8", "surface-container": "#eceef0" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "margin-desktop": "3rem", "space-lg": "1.5rem", "margin": "2rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": ["Inter"], "display-hero": ["Montserrat"], "headline-sm": ["Montserrat"], "label-sm": ["Inter"], "body-lg": ["Inter"], "display-hero-mobile": ["Montserrat"], "label-md": ["Inter"], "headline-md": ["Montserrat"], "headline-xl": ["Montserrat"], "headline-xl-mobile": ["Montserrat"], "headline-lg": ["Montserrat"], "body-sm": ["Inter"] }, "fontSize": { "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "display-hero": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "display-hero-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-coral-cta selection:text-white"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group cursor-pointer" data-path="accueil" href="index.html"><img alt="Synergies Humaines - Laurence BEDAULT" class="w-auto object-contain bg-transparent transition-all group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5Ykxo73wQDXBWNwjbMwO2B3N9DBx-trWEy_8AM-pz2Sm8Dgs2DQnWbuSASAELelleXzCg8ZLBq1EQFbDjGX6mFoKitiTRzmszFptTtyo2B6p6OnWejzoPC-OTlNoRsYwYtO6-M0lAjl6Au8M87mP-IHi5Rk7giXDQNpZskgZQ2pb4yqsPCtwrfic4TjlUIXjnn5vVehidvAgCEFBaxxAhqQjjI5K8InaEZZ9rkbpRvesgm1muU6TTHYaGDJuUHE8nyAg" style="height: 50px; width: auto; object-fit: contain;"></a><span class="hidden xl:inline-flex items-center px-space-sm py-0.5 rounded-full bg-surface-container-high text-navy-surface font-label-sm text-label-sm">Bretagne &amp; France entière</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-coral-cta font-semibold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="accueil" href="index.html">Accueil</a><a aria-current="page" class="transition-colors text-coral-cta font-semibold font-label-md text-label-md flex items-center gap-1.5" data-path="automatisation-et-ia" href="atomat.html"><span class="w-1.5 h-1.5 rounded-full bg-coral-cta"></span>Automatisation &amp; IA</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="gestion-et-rh" href="gestion.html">Gestion &amp; RH</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="web-et-digital" href="web.html">Web &amp; Digital</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="articles-blog" href="article1.html">Articles / Blog</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="a-propos-et-contact" href="apropos.html">À Propos &amp; Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden md:flex items-center gap-space-xs font-label-md text-label-md text-navy-deep hover:text-coral-cta transition-colors hover:scale-105" href="tel:0670515321"><span class="material-symbols-outlined text-coral-cta text-lg">phone</span><span class="">06.70.51.53.21</span></a><button class="open-booking-modal hidden sm:inline-flex items-center justify-center px-space-md py-2.5 rounded-lg bg-coral-cta text-on-primary font-label-md text-label-md shadow-[0_4px_12px_rgba(224,109,83,0.25)] hover:shadow-lg hover:brightness-105 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer" type="button">Prendre RDV (30 min offertes)</button><div class="flex items-center gap-space-sm"><a class="cursor-pointer group flex items-center justify-center rounded-full ring-2 ring-coral-cta/30 hover:ring-coral-cta transition-all" data-path="a-propos-et-contact" href="apropos.html"><img alt="Laurence BEDAULT" class="w-8 h-8 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqgDImQokmIz917BVLJiu8ASyf47GMelS8y1XNDStAuyHmU06zb4eB_bvxOyopaD1xIp1vDIXzV8436bRN3ZfOIDkRJ_Y0zgMtR4H1qn_DHFaWh8bP5C0M0TnVMV6RnrMY99eiDovWXvRM-V5OtHfjEgeV8t_yJB7iG2MUI3BchNeTZFIKVdE8oSYrJeee_dE3rEMMpOdkC0oIBFMON0_RgjQupf31IMeqsD5NHfgG0zypw7hmaXYVWi_QYGf_SzuySeQ"></a><button aria-label="Ouvrir le menu" class="lg:hidden p-space-xs text-on-surface hover:text-coral-cta transition-colors rounded-lg focus:outline-none cursor-pointer" id="mobile-nav-toggle" type="button"><span class="material-symbols-outlined">menu</span></button></div></div></div><div class="hidden lg:hidden bg-surface-container-lowest px-margin py-space-lg shadow-lg border-t border-surface-container-high transition-all" id="mobile-nav-menu"><nav class="flex flex-col gap-space-md" data-active-classes="text-coral-cta font-semibold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="accueil" href="index.html">Accueil</a><a aria-current="page" class="text-coral-cta font-semibold flex items-center justify-between py-1 font-label-md text-label-md" data-path="automatisation-et-ia" href="atomat.html"><span class="">Automatisation &amp; IA</span><span class="w-1.5 h-1.5 rounded-full bg-coral-cta"></span></a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="gestion-et-rh" href="gestion.html">Gestion &amp; RH</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="web-et-digital" href="web.html">Web &amp; Digital</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="articles-blog" href="article1.html">Articles / Blog</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-coral-cta transition-colors" data-path="a-propos-et-contact" href="apropos.html">À Propos &amp; Contact</a><div class="pt-space-md flex flex-col gap-space-sm border-t border-surface-container"><a class="flex items-center gap-space-xs font-label-md text-label-md text-navy-deep hover:text-coral-cta transition-colors" href="tel:0670515321"><span class="material-symbols-outlined text-coral-cta text-lg">phone</span>06.70.51.53.21</a><button class="open-booking-modal inline-flex items-center justify-center px-space-md py-2.5 rounded-lg bg-coral-cta text-on-primary font-semibold shadow-md hover:brightness-105 active:scale-95 transition-all text-center cursor-pointer w-full" type="button">Prendre RDV (30 min offertes)</button></div></nav></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface py-space-xl lg:py-24">
+<!-- Ambient decorative glow circles -->
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-sky-cyan/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-[28rem] h-[28rem] rounded-full bg-coral-cta/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+<!-- Floating Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-coral-cta/10 text-coral-cta mb-space-md shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Nouvelle Offre Phare Productivité</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-headline-xl md:text-display-hero text-navy-deep leading-tight mb-space-md">
+          Automatisation des processus &amp; Intégration IA pour TPE/PME
+        </h1>
+<!-- Subheading -->
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto mb-space-xl leading-relaxed">
+          Gagnez des dizaines d'heures chaque mois en transformant vos tâches répétitives en flux automatiques intelligemment connectés.
+        </p>
+<!-- CTA cluster -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
+<button class="open-booking-modal w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-3.5 rounded-lg bg-coral-cta text-on-primary font-label-md text-label-md shadow-[0_4px_14px_rgba(224,109,83,0.35)] hover:scale-[1.02] hover:shadow-xl active:scale-95 transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span class="">Réserver un audit flash offert (30 min)</span>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-lg bg-surface-container-lowest text-navy-deep font-label-md text-label-md shadow-sm hover:bg-surface-container hover:scale-[1.02] hover:shadow-md active:scale-95 transition-all" href="#simulateur">
+<span class="material-symbols-outlined text-sky-cyan text-lg">calculate</span>
+<span class="">Simuler mon gain d'heures</span>
+</a>
+</div>
+<!-- Metric micro-banner -->
+<div class="mt-space-xl grid grid-cols-2 md:grid-cols-4 gap-space-md w-full pt-space-lg">
+<div class="flex flex-col items-center p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur shadow-sm hover:scale-105 transition-transform">
+<span class="font-display-hero text-headline-lg text-coral-cta leading-none mb-1">15h+</span>
+<span class="font-label-sm text-label-sm text-secondary">Épargnées / mois / dirigeant</span>
+</div>
+<div class="flex flex-col items-center p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur shadow-sm hover:scale-105 transition-transform">
+<span class="font-display-hero text-headline-lg text-sky-cyan leading-none mb-1">0 €</span>
+<span class="font-label-sm text-label-sm text-secondary">Charges sociales patronales</span>
+</div>
+<div class="flex flex-col items-center p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur shadow-sm hover:scale-105 transition-transform">
+<span class="font-display-hero text-headline-lg text-navy-deep leading-none mb-1">100%</span>
+<span class="font-label-sm text-label-sm text-secondary">Sur-mesure &amp; Souverain</span>
+</div>
+<div class="flex flex-col items-center p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur shadow-sm hover:scale-105 transition-transform">
+<span class="font-display-hero text-headline-lg text-sage-accent leading-none mb-1">35 &amp; Fr</span>
+<span class="font-label-sm text-label-sm text-secondary">Rennes &amp; Toute la France</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAS D'USAGE INTERACTIFS AVEC ACCORDÉONS DÉPLIABLES -->
+<section class="w-full py-space-xl bg-surface-container-low" id="flux-interactifs">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm text-sky-cyan uppercase tracking-wider font-semibold block mb-2">Exemples Pratiques &amp; ROI Immédiat</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl text-navy-deep">
+            4 flux No-Code &amp; IA prêts à transformer votre quotidien
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-secondary max-w-md">
+          Chaque flux élimine la double saisie, évite les erreurs humaines et s'intègre discrètement dans vos logiciels existants. Cliquez sur une carte pour voir les détails d'exécution.
+        </p>
+</div>
+<!-- Grid 4 colonnes sur desktop, 2 col tablette, 1 col mobile avec accordéons interactifs -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Carte 1 : OCR Factures & Compta -->
+<div class="flow-card group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-sky-cyan/30">
+<div class="w-full">
+<div class="w-12 h-12 rounded-xl bg-sky-cyan/10 text-sky-cyan flex items-center justify-center mb-space-md group-hover:bg-sky-cyan group-hover:text-surface transition-colors">
+<span class="material-symbols-outlined text-2xl">receipt_long</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-surface-container text-secondary">Pré-Compta</span>
+<span class="text-xs font-semibold text-sky-cyan">-85% de temps</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-space-sm">
+              OCR factures &amp; synchronisation
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-space-md">
+              Capture automatique de vos PDF fournisseurs dans vos boîtes mail, extraction IA des lignes &amp; TVA, puis classement dans Pennylane, Drive et votre logiciel comptable.
+            </p>
+<!-- Bouton déplier détails -->
+<button class="flow-toggle-btn w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-sky-cyan/10 text-sky-cyan text-xs font-semibold flex items-center justify-between transition-colors mb-space-sm cursor-pointer" type="button">
+<span class="">Voir le scénario détaillé</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300">expand_more</span>
+</button>
+<!-- Accordéon replié -->
+<div class="flow-details hidden pt-2 pb-1 border-t border-slate-border text-xs text-secondary space-y-1.5">
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sky-cyan"></span><strong>Déclencheur :</strong> Email reçu avec facture PDF</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sky-cyan"></span><strong>IA Vision :</strong> Extraction HT, TTC, TVA, IBAN</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sky-cyan"></span><strong>Export :</strong> Pennylane + Dossier Drive mensuel</p>
+</div>
+</div>
+<div class="pt-space-sm border-t border-slate-border/50 mt-2">
+<div class="flex items-center gap-1.5 text-xs text-navy-deep font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+              Zéro ticket de caisse égaré
+            </div>
+</div>
+</div>
+<!-- Carte 2 : Tri Emails & IA -->
+<div class="flow-card group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-coral-cta/30">
+<div class="w-full">
+<div class="w-12 h-12 rounded-xl bg-coral-cta/10 text-coral-cta flex items-center justify-center mb-space-md group-hover:bg-coral-cta group-hover:text-surface transition-colors">
+<span class="material-symbols-outlined text-2xl">mark_email_read</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-surface-container text-secondary">Relation Client</span>
+<span class="text-xs font-semibold text-coral-cta">Boîte Mail Zéro</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-space-sm">
+              Tri e-mails &amp; pré-rédaction par IA
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-space-md">
+              Un agent GPT qualifie la priorité des messages entrants, pré-rédige des brouillons contextualisés selon vos règles métier et route l'urgence aux bons intervenants.
+            </p>
+<!-- Bouton déplier détails -->
+<button class="flow-toggle-btn w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-coral-cta/10 text-coral-cta text-xs font-semibold flex items-center justify-between transition-colors mb-space-sm cursor-pointer" type="button">
+<span class="">Voir le scénario détaillé</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300">expand_more</span>
+</button>
+<!-- Accordéon replié -->
+<div class="flow-details hidden pt-2 pb-1 border-t border-slate-border text-xs text-secondary space-y-1.5">
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-coral-cta"></span><strong>Analyse :</strong> Sentiment &amp; priorité (URGENT / NORMAL)</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-coral-cta"></span><strong>Brouillon :</strong> Pré-rempli avec votre ton de voix</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-coral-cta"></span><strong>Validation :</strong> Clic unique pour envoi</p>
+</div>
+</div>
+<div class="pt-space-sm border-t border-slate-border/50 mt-2">
+<div class="flex items-center gap-1.5 text-xs text-navy-deep font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+              Réponse client en &lt; 15 min
+            </div>
+</div>
+</div>
+<!-- Carte 3 : Cycle Devis & Relances -->
+<div class="flow-card group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-tertiary/30">
+<div class="w-full">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/10 text-tertiary flex items-center justify-center mb-space-md group-hover:bg-tertiary group-hover:text-surface transition-colors">
+<span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-surface-container text-secondary">Trésorerie</span>
+<span class="text-xs font-semibold text-tertiary">DSO divisé par 2</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-space-sm">
+              Cycle devis, factures &amp; relances
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-space-md">
+              Dès validation du devis, création automatique de l'acompte, notifications d'échéances et relances graduelles prévenantes par email et SMS sans intervention humaine.
+            </p>
+<!-- Bouton déplier détails -->
+<button class="flow-toggle-btn w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-tertiary/10 text-tertiary text-xs font-semibold flex items-center justify-between transition-colors mb-space-sm cursor-pointer" type="button">
+<span class="">Voir le scénario détaillé</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300">expand_more</span>
+</button>
+<!-- Accordéon replié -->
+<div class="flow-details hidden pt-2 pb-1 border-t border-slate-border text-xs text-secondary space-y-1.5">
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><strong>Signature :</strong> Déclenche acompte + dossier projet</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><strong>Échéances :</strong> Relance J-3, J+3, J+10 cordiale</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><strong>Banque :</strong> Rapprochement bancaire instantané</p>
+</div>
+</div>
+<div class="pt-space-sm border-t border-slate-border/50 mt-2">
+<div class="flex items-center gap-1.5 text-xs text-navy-deep font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+              Encaissement fluide et garanti
+            </div>
+</div>
+</div>
+<!-- Carte 4 : Onboarding RH & Congés -->
+<div class="flow-card group relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-sage-accent/30">
+<div class="w-full">
+<div class="w-12 h-12 rounded-xl bg-sage-accent/10 text-sage-accent flex items-center justify-center mb-space-md group-hover:bg-sage-accent group-hover:text-surface transition-colors">
+<span class="material-symbols-outlined text-2xl">group_add</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-surface-container text-secondary">Ressources Humaines</span>
+<span class="text-xs font-semibold text-sage-accent">Expérience Salarié</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-space-sm">
+              Onboarding RH &amp; demandes de congés
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-space-md">
+              Formulaire unique de recueil salarié : génération du contrat, transmission des pièces au cabinet comptable, attribution des accès et calendrier d'équipe synchronisé.
+            </p>
+<!-- Bouton déplier détails -->
+<button class="flow-toggle-btn w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-sage-accent/10 text-sage-accent text-xs font-semibold flex items-center justify-between transition-colors mb-space-sm cursor-pointer" type="button">
+<span class="">Voir le scénario détaillé</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300">expand_more</span>
+</button>
+<!-- Accordéon replié -->
+<div class="flow-details hidden pt-2 pb-1 border-t border-slate-border text-xs text-secondary space-y-1.5">
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sage-accent"></span><strong>Formulaire :</strong> Recueil sécurisé RGPD des pièces</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sage-accent"></span><strong>Contrat :</strong> Génération PDF + signature Yousign</p>
+<p class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sage-accent"></span><strong>Congés :</strong> Validation Slack/Mail et mise à jour planning</p>
+</div>
+</div>
+<div class="pt-space-sm border-t border-slate-border/50 mt-2">
+<div class="flex items-center gap-1.5 text-xs text-navy-deep font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+              Conformité sociale sans stress
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STACK OUTILS SUPPORTES -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin text-center">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-sm">hub</span>
+<span class="font-label-sm text-label-sm">Écosystème No-Code &amp; IA Agnostique</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-space-xs">
+        Les outils leaders que j'interconnecte pour vous
+      </h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl mx-auto mb-space-xl">
+        Aucun remplacement forcé de vos logiciels habituels : je relie ce que vous possédez déjà pour en décupler la puissance.
+      </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-md">
+<!-- Make -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-purple-600/10 text-purple-700 flex items-center justify-center font-bold text-xl mb-2">
+            M
+          </div>
+<span class="font-headline-sm text-headline-sm text-navy-deep">Make</span>
+<span class="font-label-sm text-label-sm text-secondary">Scénarios &amp; Flux</span>
+</div>
+<!-- Zapier -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-600 flex items-center justify-center font-bold text-xl mb-2">
+            Z
+          </div>
+<span class="font-headline-sm text-headline-sm text-navy-deep">Zapier</span>
+<span class="font-label-sm text-label-sm text-secondary">Connexions directes</span>
+</div>
+<!-- OpenAI / ChatGPT -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-teal-600/10 text-teal-700 flex items-center justify-center font-bold text-xl mb-2">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-navy-deep">OpenAI</span>
+<span class="font-label-sm text-label-sm text-secondary">Agents &amp; Vision OCR</span>
+</div>
+<!-- Airtable -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-sky-cyan/10 text-sky-cyan flex items-center justify-center font-bold text-xl mb-2">
+<span class="material-symbols-outlined text-2xl">table_chart</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-navy-deep">Airtable</span>
+<span class="font-label-sm text-label-sm text-secondary">Bases relationnelles</span>
+</div>
+<!-- Notion -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-navy-deep/10 text-navy-deep flex items-center justify-center font-bold text-xl mb-2">
+            N
+          </div>
+<span class="font-headline-sm text-headline-sm text-navy-deep">Notion</span>
+<span class="font-label-sm text-label-sm text-secondary">Hub documentaire</span>
+</div>
+<!-- Pennylane -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-700 flex items-center justify-center font-bold text-xl mb-2">
+<span class="material-symbols-outlined text-2xl">payments</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-navy-deep">Pennylane</span>
+<span class="font-label-sm text-label-sm text-secondary">Facturation &amp; TVA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SIMULATEUR D'HEURES EPARGNEES INTERACTIF -->
+<section class="w-full py-space-xl bg-surface-container-low" id="simulateur">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="rounded-3xl bg-surface-container-lowest p-space-lg md:p-space-xl shadow-md border border-slate-border/60">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Contrôles du simulateur -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-sky-cyan/10 text-sky-cyan font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-sm">tune</span>
+                Calculateur de Rentabilité Immédiate
+              </div>
+<h2 class="font-headline-lg text-headline-lg text-navy-deep mb-space-xs">
+                Combien d'heures perdez-vous en paperasse inutile ?
+              </h2>
+<p class="font-body-md text-body-md text-secondary">
+                Ajustez votre taille d'équipe et vos heures hebdomadaires consacrées à l'administratif répétitif (factures, devis, classements, relances).
+              </p>
+</div>
+<!-- Slider 1 : Taille d'équipe -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-headline-sm text-navy-deep" for="team-size">
+                  Taille de votre équipe (salariés &amp; associés)
+                </label>
+<span class="font-headline-md text-headline-md text-coral-cta font-bold" id="team-size-val">3 personnes</span>
+</div>
+<input class="w-full accent-coral-cta cursor-pointer h-2.5 bg-surface-container rounded-lg" id="team-size" max="25" min="1" type="range" value="3">
+<div class="flex justify-between text-xs text-secondary font-label-sm">
+<span class="">Indépendant (1)</span>
+<span class="">TPE (10)</span>
+<span class="">PME (25)</span>
+</div>
+</div>
+<!-- Slider 2 : Heures saisie / admin hebdo par personne -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-headline-sm text-navy-deep" for="admin-hours">
+                  Heures de saisie manuelle / semaine par collaborateur
+                </label>
+<span class="font-headline-md text-headline-md text-sky-cyan font-bold" id="admin-hours-val">6 heures / sem</span>
+</div>
+<input class="w-full accent-sky-cyan cursor-pointer h-2.5 bg-surface-container rounded-lg" id="admin-hours" max="20" min="2" type="range" value="6">
+<div class="flex justify-between text-xs text-secondary font-label-sm">
+<span class="">Modéré (2h)</span>
+<span class="">Standard (10h)</span>
+<span class="">Critique (20h)</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high/60 flex items-start gap-space-sm border-l-4 border-coral-cta">
+<span class="material-symbols-outlined text-coral-cta mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-secondary">
+                Les flux No-Code &amp; IA mis en place automatisent en moyenne <strong class="text-navy-deep">65% à 80%</strong> de ces tâches sans risque d'erreur humaine.
+              </p>
+</div>
+</div>
+<!-- Affichage des résultats ROI -->
+<div class="lg:col-span-5 flex flex-col justify-between p-space-xl rounded-2xl bg-navy-deep text-surface shadow-xl relative overflow-hidden">
+<div class="absolute -bottom-10 -right-10 w-44 h-44 rounded-full bg-coral-cta/20 blur-2xl pointer-events-none"></div>
+<div class="mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high block mb-1">Impact estimé annuel</span>
+<h3 class="font-headline-md text-headline-md text-surface">
+                Votre retour sur investissement
+              </h3>
+</div>
+<div class="space-y-space-md my-space-md">
+<div class="p-space-md rounded-xl bg-navy-surface border border-white/5">
+<span class="block font-label-sm text-label-sm text-surface-container-high mb-1">Temps libéré par mois</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero text-headline-xl md:text-display-hero text-coral-cta font-bold leading-none transition-all duration-300" id="hours-saved-month">54h</span>
+<span class="font-body-sm text-body-sm text-surface-container-high">/ mois</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-navy-surface border border-white/5">
+<span class="block font-label-sm text-label-sm text-surface-container-high mb-1">Équivalent valorisation temps dirigeant</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero text-headline-xl md:text-display-hero text-sky-cyan-light font-bold leading-none transition-all duration-300" id="euro-saved-year">29 160 €</span>
+<span class="font-body-sm text-body-sm text-surface-container-high">/ an</span>
+</div>
+<span class="block text-xs text-surface-container-high/80 mt-1 font-label-sm">(base coût horaire moyen dirigeant/cadre 45 €/h)</span>
+</div>
+</div>
+<button class="open-booking-modal mt-space-md w-full inline-flex items-center justify-center gap-space-xs py-3.5 rounded-lg bg-coral-cta text-on-primary font-label-md text-label-md shadow-[0_4px_12px_rgba(224,109,83,0.35)] hover:scale-[1.02] hover:shadow-xl active:scale-95 transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span class="">Bloquer mes 30 min d'analyse</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GRILLE TARIFAIRE 4 COLONNES CLAIRE ET TRANSPARENTE AVEC EFFETS HOVER & BOUTONS ACTIFS -->
+<section class="w-full py-space-xl bg-surface" id="tarifs">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-coral-cta uppercase tracking-wider font-semibold block mb-2">Transparence Totale &amp; Sans Engagement</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl text-navy-deep mb-space-sm">
+          Tarifs clairs et sur-mesure pour chaque palier
+        </h2>
+<p class="font-body-md text-body-md text-secondary">
+          Pas de charges sociales, pas d'engagement à long terme. Vous ne payez que la valeur créée et le travail déployé.
+        </p>
+</div>
+<!-- Grid 4 colonnes Responsive avec Hover effect perfectionné -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md items-stretch">
+<!-- Forfait 1 : Audit -->
+<div class="pricing-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 border border-slate-border/50">
+<div>
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-secondary font-medium inline-block mb-space-sm">Diagnostic Initial</span>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-1">
+                Audit &amp; Cartographie Process &amp; IA
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary min-h-[48px]">
+                Identification chirurgicale des goulots d'étranglement et plan d'action immédiat.
+              </p>
+</div>
+<div class="py-space-md my-space-md bg-surface-container-low rounded-xl px-space-md">
+<span class="font-label-sm text-label-sm text-secondary block">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-xl text-navy-deep font-bold">590 €</span>
+<span class="font-label-sm text-label-sm text-secondary">HT / audit</span>
+</div>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-navy-deep mb-space-lg">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Observation des processus (0,5 à 2 jours distanciel ou présentiel)</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Identification exhaustive des tâches répétitives</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Rapport d'opportunités chiffré &amp; ROI</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Feuille de route priorisée et recommandations d'outils</span>
+</li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span><span class="font-medium text-coral-cta">150 € HT déduits pour toute commande d'implémentation du Pack Starter</span></li></ul>
+</div>
+<button class="open-booking-modal w-full inline-flex items-center justify-center py-3 rounded-lg bg-surface-container text-navy-deep font-label-md text-label-md hover:bg-navy-deep hover:text-surface hover:scale-[1.02] hover:shadow-md active:scale-95 transition-all cursor-pointer" data-package="Audit &amp; Cartographie" type="button">
+            Réserver l'audit
+          </button>
+</div>
+<!-- Forfait 2 : Pack Starter (Mis en avant) -->
+<div class="pricing-card relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-xl ring-2 ring-coral-cta transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-coral-cta text-on-primary font-label-sm text-label-sm font-semibold tracking-wide uppercase shadow-sm">
+            Le plus populaire
+          </div>
+<div>
+<div class="mb-space-md pt-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-coral-cta/10 text-coral-cta font-medium inline-block mb-space-sm">Clé en main</span>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-1">
+                Pack Automatisation Starter
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary min-h-[48px]">
+                Mise en place rapide d'un socle automatisé fiable et immédiatement opérationnel.
+              </p>
+</div>
+<div class="py-space-md my-space-md bg-coral-cta/10 rounded-xl px-space-md">
+<span class="font-label-sm text-label-sm text-coral-cta block">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-xl text-coral-cta font-bold">590 €</span>
+<span class="font-label-sm text-label-sm text-secondary">HT / flux</span>
+</div>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-navy-deep mb-space-lg">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Conception &amp; déploiement de 2 à 3 premiers workflows clés</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Exemple : Formulaire → CRM → Facture / Mail</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Tests rigoureux en conditions réelles</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Vidéo personnalisée de prise en main</span>
+</li>
+</ul>
+</div>
+<button class="open-booking-modal w-full inline-flex items-center justify-center py-3 rounded-lg bg-coral-cta text-on-primary font-label-md text-label-md shadow-md hover:scale-[1.02] hover:shadow-lg active:scale-95 transition-all cursor-pointer" data-package="Pack Starter" type="button">
+            Prendre RDV (30 min)
+          </button>
+</div>
+<!-- Forfait 3 : Espace Connecté -->
+<div class="pricing-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 border border-slate-border/50">
+<div>
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-sky-cyan/10 text-sky-cyan font-medium inline-block mb-space-sm">Architecture Globale</span>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-1">
+                Espace Connecté (Notion / Airtable)
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary min-h-[48px]">
+                Création de votre cockpit opérationnel centralisé sur Notion ou Airtable.
+              </p>
+</div>
+<div class="py-space-md my-space-md bg-surface-container-low rounded-xl px-space-md">
+<span class="font-label-sm text-label-sm text-secondary block">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-xl text-navy-deep font-bold">790 €</span>
+<span class="font-label-sm text-label-sm text-secondary">HT / projet</span>
+</div>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-navy-deep mb-space-lg">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Dashboard d'entreprise sur-mesure</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Briques d'IA intégrées (résumés, qualification)</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Bases de données interconnectées &amp; vues métiers</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Support, formation &amp; ajustements 15 jours offerts</span>
+</li>
+</ul>
+</div>
+<button class="open-booking-modal w-full inline-flex items-center justify-center py-3 rounded-lg bg-surface-container text-navy-deep font-label-md text-label-md hover:bg-navy-deep hover:text-surface hover:scale-[1.02] hover:shadow-md active:scale-95 transition-all cursor-pointer" data-package="Espace Connecté" type="button">
+            Déployer mon cockpit
+          </button>
+</div>
+<!-- Forfait 4 : À l'heure ou TJM -->
+<div class="pricing-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 border border-slate-border/50">
+<div>
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-sage-accent/10 text-sage-accent font-medium inline-block mb-space-sm">Souplesse Agile</span>
+<h3 class="font-headline-md text-headline-md text-navy-deep mb-1">
+                Accompagnement Horaire / TJM
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary min-h-[48px]">
+                Pour des projets évolutifs ou une assistance technique continue sur-mesure.
+              </p>
+</div>
+<div class="py-space-md my-space-md bg-surface-container-low rounded-xl px-space-md">
+<span class="font-label-sm text-label-sm text-secondary block">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-xl text-navy-deep font-bold">85 €</span>
+<span class="font-label-sm text-label-sm text-secondary">HT / h ou TJM 600 € HT</span>
+</div>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-navy-deep mb-space-lg">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Maintenance &amp; support réactif à la carte</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Création de scénarios spécifiques &amp; sur-mesure</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Coaching et montée en compétences de vos équipes</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-coral-cta text-base mt-0.5">check_circle</span>
+<span class="">Facturation au temps exact sans engagement</span>
+</li>
+</ul>
+</div>
+<button class="open-booking-modal w-full inline-flex items-center justify-center py-3 rounded-lg bg-surface-container text-navy-deep font-label-md text-label-md hover:bg-navy-deep hover:text-surface hover:scale-[1.02] hover:shadow-md active:scale-95 transition-all cursor-pointer" data-package="Accompagnement Horaire" type="button">
+            Discuter de mes besoins
+          </button>
+</div>
+</div>
+<!-- Note de réassurance bas de grille -->
+<div class="mt-space-lg text-center">
+<p class="font-body-sm text-body-sm text-secondary inline-flex items-center gap-1.5 bg-surface-container-lowest px-4 py-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-coral-cta text-sm">lock_reset</span>
+<span class="">Pas de charges sociales, pas d'engagement à long terme. Tarifs clairs, devis transparent et sur-mesure.</span>
+</p>
+</div>
+</div>
+</section>
+<!-- BANNIERE CTA AVEC LAURENCE BEDAULT -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="relative overflow-hidden rounded-3xl bg-navy-deep text-surface p-space-lg md:p-space-xl shadow-xl">
+<!-- Background light elements -->
+<div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-coral-cta/15 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs text-coral-cta font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-base">support_agent</span>
+<span class="">Accompagnement Humain &amp; Stratégique</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl text-surface leading-tight">
+              Prêt à libérer votre entreprise des tâches répétitives ?
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl leading-relaxed">Réservez 30 minutes gratuites avec Laurence BEDAULT. J'analyse avec vous vos points de friction actuels et j'identifie vos 2 premiers flux automatisables sans bouleverser vos habitudes.</p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md text-surface-container-high font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-coral-cta text-base">location_on</span>
+                Présentiel Ille-et-Vilaine (35) &amp; Côtes d'Armor (22)
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sky-cyan-light text-base">laptop_mac</span>
+                Distanciel France entière
+              </span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-center lg:items-end justify-center">
+<div class="flex flex-col items-center p-space-md rounded-2xl bg-navy-surface w-full max-w-sm text-center border border-white/10">
+<img alt="Laurence BEDAULT" class="w-20 h-20 rounded-full object-cover mb-space-sm shadow-md ring-2 ring-coral-cta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxcXlhPOkr7eIrhPV_t1uM_KQy53kztW154_KYiOiiAMZE-CMx-6e3Xz44Oy88nrtYKS4O2X8UYRiwIdO-ntjQ3mZYJl92MqtWkoJ_ePqHvPTwlkoShbF5vW94OWctE2wkRMRfFU7vrWT4tr1nQN8jKfzRh-ijJPV0c3lLVysrTo58Py3XTLGI-pJu2CpoEnAQlwFTM1DqLy599A8k3BouSu6T303vFAthN49S0DtwBwBdVd1Poqe-wf5ovsjSIb02gn4">
+<span class="font-headline-sm text-headline-sm text-surface">Laurence BEDAULT</span>
+<span class="font-body-sm text-body-sm text-surface-container-high mb-space-md">Fondatrice &amp; Bras Droit Opérationnel</span>
+<button class="open-booking-modal w-full inline-flex items-center justify-center gap-space-xs py-3 rounded-lg bg-coral-cta text-on-primary font-label-md text-label-md shadow-md hover:scale-[1.02] hover:shadow-lg active:scale-95 transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+<span class="">Réserver un créneau (Calendly)</span>
+</button>
+<a class="mt-space-sm text-xs text-surface-container-high hover:text-coral-cta transition-colors flex items-center gap-1" href="tel:0670515321">
+<span class="material-symbols-outlined text-sm">phone</span>
+                Ou par téléphone au 06.70.51.53.21
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main>
+<!-- MODALE DE RÉSERVATION INTERACTIVE (CALENDLY / CRÉNEAUX) -->
+<div aria-hidden="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-deep/70 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300" id="booking-modal">
+<div class="relative w-full max-w-xl rounded-2xl bg-surface-container-lowest p-6 md:p-8 shadow-2xl scale-95 transition-all duration-300 max-h-[90vh] overflow-y-auto">
+<button aria-label="Fermer la fenêtre" class="absolute top-4 right-4 p-2 text-secondary hover:text-navy-deep rounded-full hover:bg-surface-container transition-colors cursor-pointer" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<div class="flex items-center gap-3 mb-4">
+<img alt="Laurence BEDAULT" class="w-12 h-12 rounded-full object-cover ring-2 ring-coral-cta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACxDoDD-I82AmkFyRVW1-5BXIviwWUOgt7-d5AXF_2ACncWBF0H9d_Q92ur07I9r15H5Y-N3mKXIwPmTEYxpJ6zNTsG7TJqrHXmLjtZUwzC_wnQFaX_rhmZVuLvn-E37WgSKhV4rdGopmvaG93qVT7Ix9viUvmSmKJuCLunushH43rfZyTH9LPoFgmOIE2NOm_e65gDbI-VYUD-8z9vRCCXmhvpMbD06JAcRtS5aCt6bRatlLDldqBx9OVrPLkL-8Xxlk">
+<div>
+<h3 class="font-headline-md text-headline-md text-navy-deep">Échange Découverte (30 min offertes)</h3>
+<p class="font-body-sm text-body-sm text-secondary">Avec Laurence BEDAULT • Sans aucun engagement</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low mb-6 border border-slate-border text-xs text-secondary space-y-1">
+<p class="font-semibold text-navy-deep flex items-center gap-1.5"><span class="material-symbols-outlined text-coral-cta text-base">lightbulb</span> Objectifs des 30 minutes :</p>
+<p class="">• Comprendre vos irritants administratifs ou processus manuels chronophages</p>
+<p class="">• Valider la faisabilité technique (Make, Zapier, IA, Notion, Airtable)</p>
+<p class="">• Estimer le gain d'heures mensuel et le budget associé</p>
+</div>
+<div class="space-y-4">
+<label class="block font-headline-sm text-sm text-navy-deep font-semibold">Choisissez votre mode de prise de rendez-vous :</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<a class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-coral-cta bg-coral-cta/5 hover:bg-coral-cta hover:text-white group text-center transition-all cursor-pointer" href="https://calendly.com/laurence-bedault-synergies-humaines/30min" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-3xl text-coral-cta group-hover:text-white mb-1 transition-colors">calendar_month</span>
+<span class="font-headline-sm text-sm font-bold text-navy-deep group-hover:text-white transition-colors">Calendrier en ligne</span>
+<span class="text-xs text-secondary group-hover:text-white/90 transition-colors">Choix instantané du créneau</span>
+</a>
+<a class="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-border hover:border-navy-deep bg-surface-container-low hover:bg-surface-container text-center transition-all cursor-pointer" href="tel:0670515321">
+<span class="material-symbols-outlined text-3xl text-sky-cyan mb-1">call</span>
+<span class="font-headline-sm text-sm font-bold text-navy-deep">Appel direct</span>
+<span class="text-xs text-secondary">06.70.51.53.21</span>
+</a>
+</div>
+<div class="pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-coral-cta text-white font-label-md shadow-md hover:scale-[1.01] hover:shadow-lg transition-transform cursor-pointer" href="https://calendly.com/laurence-bedault-synergies-humaines/30min" rel="noopener noreferrer" target="_blank">
+<span class="">Accéder directement à l'agenda Calendly</span>
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<footer class="w-full bg-navy-deep text-surface py-space-xl"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div><div class="mb-space-md"><span class="font-headline-sm text-headline-sm text-surface tracking-wider uppercase font-bold whitespace-nowrap inline-block">Synergies Humaines</span></div><p class="font-body-sm text-body-sm text-surface-container-high leading-relaxed">Conseil en organisation, performance administrative, automatisation No-Code &amp; IA et création digitale sur-mesure pour PME et indépendants par Laurence BEDAULT.</p></div><div><span class="block font-headline-sm text-headline-sm text-surface mb-space-md">Pôles d'expertise</span><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class=""><a class="text-coral-cta font-semibold hover:underline transition-colors" data-path="automatisation-et-ia" href="atomat.html">IA &amp; No-Code opérationnel</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="gestion-et-rh" href="gestion.html">Gestion administrative &amp; Pré-compta</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="gestion-et-rh" href="gestion.html">RH, Recrutement &amp; Onboarding</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="web-et-digital" href="web.html">Sites Web vitrines &amp; Outils Métier</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="articles-blog" href="article1.html">Articles &amp; Cas pratiques</a></li></ul></div><div><span class="block font-headline-sm text-headline-sm text-surface mb-space-md">Zone d'intervention</span><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class="">Présentiel : Rennes</li><li class="">Distanciel : France entière &amp; DOM-TOM</li><li class="">Audit flash &amp; Immersion sur site</li></ul></div><div><span class="block font-headline-sm text-headline-sm text-surface mb-space-md">Coordonnées directes</span><ul class="space-y-space-sm font-body-sm text-body-sm text-surface-container-high"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">call</span><a class="hover:text-coral-cta transition-colors" href="tel:0670515321">06.70.51.53.21</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">mail</span><a class="hover:text-coral-cta transition-colors" href="mailto:laurence@synergieshumaines.com">laurence@synergieshumaines.com</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">location_on</span><span class="">La Chapelle-Chaussée (35)</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">schedule</span><span class="">Du lundi au vendredi : 8h30 - 18h30</span></li></ul></div></div><div class="pt-space-lg border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high"><p class="">© 2025 Synergies Humaines - Laurence BEDAULT. Tous droits réservés.</p><div class="flex items-center gap-space-md"><a class="hover:text-coral-cta transition-colors" data-path="mentions-legales" href="mentions.html">Mentions Légales</a><a class="hover:text-coral-cta transition-colors" data-path="politique-de-confidentialite" href="mentions.html#rgpd">Politique de Confidentialité</a></div></div></div></footer>
+<!-- JAVASCRIPT GLOBAL D'INTERACTIVITÉ -->
+<script>
+  // Mobile Nav Toggle
+  const toggleBtn = document.getElementById('mobile-nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav-menu');
+  if (toggleBtn && mobileNav) {
+    toggleBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+  }
+
+  // Modale de Réservation (interactive pour tous les boutons de prise de RDV)
+  const modal = document.getElementById('booking-modal');
+  const openModalBtns = document.querySelectorAll('.open-booking-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+
+  function openModal() {
+    if (!modal) return;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100', 'pointer-events-auto');
+    const inner = modal.querySelector('div');
+    if (inner) {
+      inner.classList.remove('scale-95');
+      inner.classList.add('scale-100');
+    }
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.classList.remove('opacity-100', 'pointer-events-auto');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    const inner = modal.querySelector('div');
+    if (inner) {
+      inner.classList.remove('scale-100');
+      inner.classList.add('scale-95');
+    }
+  }
+
+  openModalBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', closeModal);
+  }
+
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && !modal.classList.contains('pointer-events-none')) {
+      closeModal();
+    }
+  });
+
+  // Accordéons des 4 flux d'automatisation
+  const flowToggles = document.querySelectorAll('.flow-toggle-btn');
+  flowToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const parent = btn.closest('.flow-card');
+      const details = parent.querySelector('.flow-details');
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (details) {
+        const isHidden = details.classList.contains('hidden');
+        if (isHidden) {
+          details.classList.remove('hidden');
+          if (icon) icon.classList.add('rotate-180');
+          btn.querySelector('span:first-child').textContent = 'Masquer le scénario';
+        } else {
+          details.classList.add('hidden');
+          if (icon) icon.classList.remove('rotate-180');
+          btn.querySelector('span:first-child').textContent = 'Voir le scénario détaillé';
+        }
+      }
+    });
+  });
+
+  // Simulateur Dynamique d'Heures & ROI
+  (function initSimulator() {
+    const teamSlider = document.getElementById('team-size');
+    const hoursSlider = document.getElementById('admin-hours');
+    const teamValLabel = document.getElementById('team-size-val');
+    const hoursValLabel = document.getElementById('admin-hours-val');
+    const hoursMonthLabel = document.getElementById('hours-saved-month');
+    const euroYearLabel = document.getElementById('euro-saved-year');
+
+    if (!teamSlider || !hoursSlider) return;
+
+    function updateCalculations() {
+      const teamSize = parseInt(teamSlider.value, 10);
+      const hoursPerWeek = parseInt(hoursSlider.value, 10);
+
+      teamValLabel.textContent = teamSize + (teamSize > 1 ? ' personnes' : ' personne');
+      hoursValLabel.textContent = hoursPerWeek + ' heures / sem';
+
+      // Hypothèse : 72% de temps de saisie et relance automatisable, 4.2 semaines par mois
+      const totalAdminHoursMonth = teamSize * hoursPerWeek * 4.2;
+      const savedHoursMonth = Math.round(totalAdminHoursMonth * 0.72);
+      
+      // Coût horaire moyen estimé dirigeant/cadre : 45€/h
+      const annualEuroValue = Math.round(savedHoursMonth * 12 * 45);
+
+      hoursMonthLabel.textContent = savedHoursMonth + 'h';
+      euroYearLabel.textContent = new Intl.NumberFormat('fr-FR').format(annualEuroValue) + ' €';
+    }
+
+    teamSlider.addEventListener('input', updateCalculations);
+    hoursSlider.addEventListener('input', updateCalculations);
+
+    // Initialisation
+    updateCalculations();
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
