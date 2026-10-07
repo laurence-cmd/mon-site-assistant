@@ -1,0 +1,75 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "content"
+    label: "Contenu du site"
+    files:
+      - file: "content/site.json"
+        label: "Informations générales"
+        name: "site"
+        format: "json"
+        fields:
+          - { label: "Téléphone", name: "phone", widget: "string" }
+          - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Lien Calendly", name: "calendly", widget: "string" }
+
+      - file: "content/home.json"
+        label: "Page d'accueil"
+        name: "home"
+        format: "json"
+        fields:
+          - { label: "Titre principal", name: "hero_title", widget: "string" }
+          - { label: "Texte d'introduction", name: "hero_desc", widget: "text" }
+
+      - file: "content/legal.json"
+        label: "Mentions légales"
+        name: "legal"
+        format: "json"
+        fields:
+          - { label: "Dernière mise à jour", name: "updated", widget: "string" }
+          - { label: "Nom commercial", name: "business_name", widget: "string" }
+          - { label: "Statut", name: "status", widget: "string" }
+          - { label: "Responsable", name: "owner", widget: "string" }
+          - { label: "Adresse", name: "address", widget: "string" }
+          - { label: "SIRET", name: "siret", widget: "string" }
+          - { label: "Code APE / NAF", name: "ape", widget: "string" }
+          - { label: "Texte RGPD", name: "rgpd", widget: "markdown" }
+          - { label: "Texte Cookies", name: "cookies", widget: "markdown" }
+
+      - file: "content/articles.json"
+        label: "Articles"
+        name: "articles"
+        format: "json"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            summary: "{{fields.title}}"
+            add_to_top: true
+            fields:
+              - { label: "Titre de l'article", name: "title", widget: "string" }
+              - { label: "Titre SEO", name: "seo_title", widget: "string", hint: "Idéalement environ 50 à 60 caractères." }
+              - { label: "Résumé de la carte", name: "excerpt", widget: "text" }
+              - { label: "Méta-description SEO", name: "seo_description", widget: "text", hint: "Idéalement environ 140 à 160 caractères." }
+              - { label: "URL / slug", name: "slug", widget: "string", hint: "Exemple : facturation-electronique-2026" }
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                options:
+                  - "No-Code & IA"
+                  - "Gestion Admin & Trésorerie"
+                  - "RH & Recrutement"
+                  - "Web & Visibilité"
+                  - "Réforme Réglementaire"
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
+              - { label: "Image principale", name: "image", widget: "image", required: false }
+              - { label: "Texte alternatif de l'image (ALT)", name: "image_alt", widget: "string", required: false }
+              - { label: "Auteur", name: "author", widget: "string", default: "Laurence BEDAULT" }
+              - { label: "Temps de lecture", name: "reading_time", widget: "string", default: "5 min" }
+              - { label: "Article à la une", name: "featured", widget: "boolean", default: false }
+              - { label: "Contenu de l'article", name: "body", widget: "markdown" }
