@@ -648,6 +648,42 @@ collections:
       name: texte_047
       widget: string
       required: false
+    - label: Tarifs — Automatisation — Audit (590 €)
+      name: atomat_tarif_audit
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Automatisation — Pack Starter (590 €)
+      name: atomat_tarif_starter
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Automatisation — Espace Connecté (790 €)
+      name: atomat_tarif_connecte
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Automatisation — Tarif horaire (85 €)
+      name: atomat_tarif_horaire
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Automatisation — Tarif journalier (600 €)
+      name: atomat_tarif_tjm
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Automatisation — Remise audit (150 € HT)
+      name: atomat_tarif_remise
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
   - file: content/gestion_sections.json
     label: Gestion & RH
     name: gestion_sections
@@ -877,6 +913,24 @@ collections:
       name: texte_056
       widget: text
       required: false
+    - label: Tarifs — Gestion — Tarif résumé (30 €/h)
+      name: gestion_tarif_resume
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Gestion — Forfait mensuel (À partir de 30 €)
+      name: gestion_tarif_forfait
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
+    - label: Tarifs — Gestion — Mention tarifaire (30 € / heure)
+      name: gestion_tarif_mention
+      widget: string
+      required: false
+      hint: Saisir le montant avec € et HT si nécessaire. Mettre à jour les autres emplacements correspondants pour
+        garder des tarifs cohérents.
   - file: content/web_sections.json
     label: Web & Digital
     name: web_sections
