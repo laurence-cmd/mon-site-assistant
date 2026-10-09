@@ -1,75 +1,1294 @@
 backend:
   name: git-gateway
   branch: main
-
-media_folder: "assets/images"
-public_folder: "/assets/images"
-
+media_folder: assets/images
+public_folder: /assets/images
 collections:
-  - name: "content"
-    label: "Contenu du site"
-    files:
-      - file: "content/site.json"
-        label: "Informations générales"
-        name: "site"
-        format: "json"
-        fields:
-          - { label: "Téléphone", name: "phone", widget: "string" }
-          - { label: "E-mail", name: "email", widget: "string" }
-          - { label: "Lien Calendly", name: "calendly", widget: "string" }
-
-      - file: "content/home.json"
-        label: "Page d'accueil"
-        name: "home"
-        format: "json"
-        fields:
-          - { label: "Titre principal", name: "hero_title", widget: "string" }
-          - { label: "Texte d'introduction", name: "hero_desc", widget: "text" }
-
-      - file: "content/legal.json"
-        label: "Mentions légales"
-        name: "legal"
-        format: "json"
-        fields:
-          - { label: "Dernière mise à jour", name: "updated", widget: "string" }
-          - { label: "Nom commercial", name: "business_name", widget: "string" }
-          - { label: "Statut", name: "status", widget: "string" }
-          - { label: "Responsable", name: "owner", widget: "string" }
-          - { label: "Adresse", name: "address", widget: "string" }
-          - { label: "SIRET", name: "siret", widget: "string" }
-          - { label: "Code APE / NAF", name: "ape", widget: "string" }
-          - { label: "Texte RGPD", name: "rgpd", widget: "markdown" }
-          - { label: "Texte Cookies", name: "cookies", widget: "markdown" }
-
-      - file: "content/articles.json"
-        label: "Articles"
-        name: "articles"
-        format: "json"
-        fields:
-          - label: "Articles"
-            name: "articles"
-            widget: "list"
-            summary: "{{fields.title}}"
-            add_to_top: true
-            fields:
-              - { label: "Titre de l'article", name: "title", widget: "string" }
-              - { label: "Titre SEO", name: "seo_title", widget: "string", hint: "Idéalement environ 50 à 60 caractères." }
-              - { label: "Résumé de la carte", name: "excerpt", widget: "text" }
-              - { label: "Méta-description SEO", name: "seo_description", widget: "text", hint: "Idéalement environ 140 à 160 caractères." }
-              - { label: "URL / slug", name: "slug", widget: "string", hint: "Exemple : facturation-electronique-2026" }
-              - label: "Catégorie"
-                name: "category"
-                widget: "select"
-                options:
-                  - "No-Code & IA"
-                  - "Gestion Admin & Trésorerie"
-                  - "RH & Recrutement"
-                  - "Web & Visibilité"
-                  - "Réforme Réglementaire"
-              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
-              - { label: "Image principale", name: "image", widget: "image", required: false }
-              - { label: "Texte alternatif de l'image (ALT)", name: "image_alt", widget: "string", required: false }
-              - { label: "Auteur", name: "author", widget: "string", default: "Laurence BEDAULT" }
-              - { label: "Temps de lecture", name: "reading_time", widget: "string", default: "5 min" }
-              - { label: "Article à la une", name: "featured", widget: "boolean", default: false }
-              - { label: "Contenu de l'article", name: "body", widget: "markdown" }
+- name: content
+  label: Contenu du site
+  files:
+  - file: content/site.json
+    label: Informations générales
+    name: site
+    format: json
+    fields:
+    - label: Téléphone
+      name: phone
+      widget: string
+    - label: E-mail
+      name: email
+      widget: string
+    - label: Lien Calendly
+      name: calendly
+      widget: string
+  - file: content/home.json
+    label: Page d'accueil
+    name: home
+    format: json
+    fields:
+    - label: Titre principal
+      name: hero_title
+      widget: string
+    - label: Texte d'introduction
+      name: hero_desc
+      widget: text
+  - file: content/legal.json
+    label: Mentions légales
+    name: legal
+    format: json
+    fields:
+    - label: Dernière mise à jour
+      name: updated
+      widget: string
+    - label: Nom commercial
+      name: business_name
+      widget: string
+    - label: Statut
+      name: status
+      widget: string
+    - label: Responsable
+      name: owner
+      widget: string
+    - label: Adresse
+      name: address
+      widget: string
+    - label: SIRET
+      name: siret
+      widget: string
+    - label: Code APE / NAF
+      name: ape
+      widget: string
+    - label: Texte RGPD
+      name: rgpd
+      widget: markdown
+    - label: Texte Cookies
+      name: cookies
+      widget: markdown
+  - file: content/articles.json
+    label: Articles
+    name: articles
+    format: json
+    fields:
+    - label: Articles
+      name: articles
+      widget: list
+      summary: '{{fields.title}}'
+      add_to_top: true
+      fields:
+      - label: Titre de l'article
+        name: title
+        widget: string
+      - label: Titre SEO
+        name: seo_title
+        widget: string
+        hint: Idéalement environ 50 à 60 caractères.
+      - label: Résumé de la carte
+        name: excerpt
+        widget: text
+      - label: Méta-description SEO
+        name: seo_description
+        widget: text
+        hint: Idéalement environ 140 à 160 caractères.
+      - label: URL / slug
+        name: slug
+        widget: string
+        hint: 'Exemple : facturation-electronique-2026'
+      - label: Catégorie
+        name: category
+        widget: select
+        options:
+        - No-Code & IA
+        - Gestion Admin & Trésorerie
+        - RH & Recrutement
+        - Web & Visibilité
+        - Réforme Réglementaire
+      - label: Date
+        name: date
+        widget: datetime
+        date_format: DD/MM/YYYY
+        time_format: false
+      - label: Image principale
+        name: image
+        widget: image
+        required: false
+      - label: Texte alternatif de l'image (ALT)
+        name: image_alt
+        widget: string
+        required: false
+      - label: Auteur
+        name: author
+        widget: string
+        default: Laurence BEDAULT
+      - label: Temps de lecture
+        name: reading_time
+        widget: string
+        default: 5 min
+      - label: Article à la une
+        name: featured
+        widget: boolean
+        default: false
+      - label: Contenu de l'article
+        name: body
+        widget: markdown
+  - file: content/index_sections.json
+    label: Accueil — contenu complémentaire
+    name: index_sections
+    format: json
+    fields:
+    - label: 'P 1 — Le bras droit opérationnel et digital des dirigeants de TPE, PME '
+      name: texte_001
+      widget: text
+      required: false
+    - label: Image 2 — Laurence BEDAULT - Fondatrice Synergies Humaines
+      name: image_002
+      widget: image
+      required: false
+    - label: H2 3 — Laurence BEDAULT
+      name: texte_003
+      widget: string
+      required: false
+    - label: P 4 — Fondatrice & Bras Droit Opérationnel
+      name: texte_004
+      widget: string
+      required: false
+    - label: P 5 — « Un seul partenaire dédié pour fiabiliser votre gestion, sécuris
+      name: texte_005
+      widget: text
+      required: false
+    - label: P 6 — Présentiel Bretagne
+      name: texte_006
+      widget: string
+      required: false
+    - label: P 7 — Rennes, La Chapelle-Chaussée, 35 & 22
+      name: texte_007
+      widget: string
+      required: false
+    - label: P 8 — Distanciel Réactif
+      name: texte_008
+      widget: string
+      required: false
+    - label: P 9 — Toute la France (outils digitaux fluides & sécurisés)
+      name: texte_009
+      widget: string
+      required: false
+    - label: H2 10 — Votre quotidien ressemble-t-il à cela ?
+      name: texte_010
+      widget: string
+      required: false
+    - label: P 11 — Le temps que vous passez à brasser du papier et gérer des urgence
+      name: texte_011
+      widget: text
+      required: false
+    - label: H3 12 — Sous l'eau avec la paperasse ?
+      name: texte_012
+      widget: string
+      required: false
+    - label: P 13 — Notes de frais éparpillées, justificatifs introuvables, boîtes ma
+      name: texte_013
+      widget: text
+      required: false
+    - label: H3 14 — Factures et devis en retard ?
+      name: texte_014
+      widget: string
+      required: false
+    - label: P 15 — Un devis envoyé trop tard est un chantier perdu. Des factures non
+      name: texte_015
+      widget: text
+      required: false
+    - label: H3 16 — Charge mentale & soirs sacrifiés ?
+      name: texte_016
+      widget: string
+      required: false
+    - label: 'P 17 — Rentrer chez soi pour se remettre à l''ordinateur jusqu''à minuit. '
+      name: texte_017
+      widget: text
+      required: false
+    - label: P 18 — Reprenez le contrôle sans embaucher
+      name: texte_018
+      widget: string
+      required: false
+    - label: 'P 19 — Déléguez à une experte terrain immédiatement opérationnelle, dès '
+      name: texte_019
+      widget: string
+      required: false
+    - label: BUTTON 20 — Échanger 30 min sans engagement
+      name: texte_020
+      widget: string
+      required: false
+    - label: H2 21 — Mes 3 domaines d'expertise
+      name: texte_021
+      widget: string
+      required: false
+    - label: P 22 — Un accompagnement sur-mesure et une interlocutrice unique pour st
+      name: texte_022
+      widget: text
+      required: false
+    - label: H3 23 — 1. Automatisation No-Code & IA
+      name: texte_023
+      widget: string
+      required: false
+    - label: P 24 — Je connecte vos outils et j'automatise vos tâches répétitives pou
+      name: texte_024
+      widget: text
+      required: false
+    - label: H3 25 — 2. Gestion Admin & RH
+      name: texte_025
+      widget: string
+      required: false
+    - label: P 26 — Je sécurise et j'optimise votre gestion administrative et le suiv
+      name: texte_026
+      widget: text
+      required: false
+    - label: H3 27 — 3. Web, Digital & Communication Externalisée
+      name: texte_027
+      widget: string
+      required: false
+    - label: P 28 — Votre chargée de communication à temps partagé. Je pilote votre p
+      name: texte_028
+      widget: text
+      required: false
+    - label: H2 29 — Pourquoi combiner l'Humain avec le No-Code & l'IA ?
+      name: texte_029
+      widget: string
+      required: false
+    - label: 'P 30 — La technologie seule ne résout rien si les processus ne sont pas '
+      name: texte_030
+      widget: text
+      required: false
+    - label: P 31 — Gagnées chaque mois
+      name: texte_031
+      widget: string
+      required: false
+    - label: P 32 — Sur les tâches chronophages de reporting, saisie et facturation.
+      name: texte_032
+      widget: string
+      required: false
+    - label: P 33 — De charge sociale fixe
+      name: texte_033
+      widget: string
+      required: false
+    - label: P 34 — Pas d'engagement CDI, pas de mutuelle obligatoire, souplesse abso
+      name: texte_034
+      widget: string
+      required: false
+    - label: 'P 35 — « En automatisant la récupération de mes factures et en confiant '
+      name: texte_035
+      widget: text
+      required: false
+    - label: P 36 — Dirigeant d'une entreprise de second-œuvre (35)
+      name: texte_036
+      widget: string
+      required: false
+    - label: P 37 — Simulateur de Gain Hebdomadaire
+      name: texte_037
+      widget: string
+      required: false
+    - label: P 38 — Ajustez vos heures de paperasse pour estimer votre libération
+      name: texte_038
+      widget: string
+      required: false
+    - label: P 39 — Gain mensuel estimé
+      name: texte_039
+      widget: string
+      required: false
+    - label: P 40 — 38 heures / mois
+      name: texte_040
+      widget: string
+      required: false
+    - label: P 41 — Valeur temps récupéré (~50€/h)
+      name: texte_041
+      widget: string
+      required: false
+    - label: P 42 — 1 900 € / mois
+      name: texte_042
+      widget: string
+      required: false
+    - label: P 43 — Flux opérationnel type mis en place
+      name: texte_043
+      widget: string
+      required: false
+    - label: P 44 — 1. Collecte Auto
+      name: texte_044
+      widget: string
+      required: false
+    - label: P 45 — Scan OCR & e-mails
+      name: texte_045
+      widget: string
+      required: false
+    - label: P 46 — 2. Traitement No-Code
+      name: texte_046
+      widget: string
+      required: false
+    - label: P 47 — Make & Synchronisation
+      name: texte_047
+      widget: string
+      required: false
+    - label: P 48 — 3. Contrôle Humain
+      name: texte_048
+      widget: string
+      required: false
+    - label: P 49 — Validation Laurence
+      name: texte_049
+      widget: string
+      required: false
+    - label: H2 50 — De notre premier contact à votre premier gain de temps
+      name: texte_050
+      widget: string
+      required: false
+    - label: P 51 — Une collaboration fluide, sans engagement rigide, taillée précisé
+      name: texte_051
+      widget: text
+      required: false
+    - label: H3 52 — Premier Échange
+      name: texte_052
+      widget: string
+      required: false
+    - label: P 53 — Gratuit (30 min). Nous faisons le point sur votre organisation, v
+      name: texte_053
+      widget: text
+      required: false
+    - label: H3 54 — Diagnostic & Heures
+      name: texte_054
+      widget: string
+      required: false
+    - label: P 55 — J'évalue le volume exact d'heures ou la récurrence hebdomadaire p
+      name: texte_055
+      widget: text
+      required: false
+    - label: H3 56 — Devis Sur-Mesure
+      name: texte_056
+      widget: string
+      required: false
+    - label: P 57 — Une proposition commerciale limpide. Vous savez exactement ce qui
+      name: texte_057
+      widget: text
+      required: false
+    - label: H3 58 — Lancement Immédiat
+      name: texte_058
+      widget: string
+      required: false
+    - label: P 59 — Transmission sécurisée des accès, mise en place des flux et démar
+      name: texte_059
+      widget: text
+      required: false
+    - label: H3 60 — Sérénité Retrouvée
+      name: texte_060
+      widget: string
+      required: false
+    - label: P 61 — Vos soirées et week-ends vous appartiennent à nouveau. Votre trés
+      name: texte_061
+      widget: string
+      required: false
+    - label: H2 62 — Ce que disent les dirigeants accompagnés
+      name: texte_062
+      widget: string
+      required: false
+    - label: P 63 — Avis vérifiés Google (Note moyenne 5.0 / 5)
+      name: texte_063
+      widget: string
+      required: false
+    - label: P 64 — « Laurence est une personne sérieuse, réactive et très profession
+      name: texte_064
+      widget: text
+      required: false
+    - label: P 65 — Guillaume K.
+      name: texte_065
+      widget: string
+      required: false
+    - label: P 66 — Avis Google vérifié
+      name: texte_066
+      widget: string
+      required: false
+    - label: P 67 — « J’ai eu l’occasion de découvrir les services de Synergies Humai
+      name: texte_067
+      widget: text
+      required: false
+    - label: P 68 — Alexandra M.
+      name: texte_068
+      widget: string
+      required: false
+    - label: P 69 — Dirigeante d'Entreprise
+      name: texte_069
+      widget: string
+      required: false
+    - label: P 70 — « Professionnalisme très apprécié avec un appui administratif rig
+      name: texte_070
+      widget: text
+      required: false
+    - label: P 71 — Amélie L.
+      name: texte_071
+      widget: string
+      required: false
+    - label: P 72 — Professionnelle Indépendante
+      name: texte_072
+      widget: string
+      required: false
+    - label: H2 73 — Questions fréquentes de mes clients
+      name: texte_073
+      widget: string
+      required: false
+    - label: P 74 — Tout ce que vous devez savoir avant de déléguer en toute sérénité
+      name: texte_074
+      widget: text
+      required: false
+    - label: H3 75 — Suis-je engagé sur la durée avec un contrat contraignant ?
+      name: texte_075
+      widget: string
+      required: false
+    - label: 'H3 76 — Comment intervenez-vous concrètement : sur place ou à distance ?'
+      name: texte_076
+      widget: string
+      required: false
+    - label: H3 77 — Mon entreprise est-elle trop petite pour l'automatisation et l'IA
+      name: texte_077
+      widget: string
+      required: false
+    - label: H3 78 — Remplacez-vous mon expert-comptable ?
+      name: texte_078
+      widget: string
+      required: false
+    - label: H2 79 — Prêt à libérer votre agenda et reprendre le contrôle de votre ent
+      name: texte_079
+      widget: string
+      required: false
+    - label: P 80 — Réservez dès aujourd'hui votre audit découverte de 30 minutes off
+      name: texte_080
+      widget: text
+      required: false
+  - file: content/atomat_sections.json
+    label: Automatisation & IA
+    name: atomat_sections
+    format: json
+    fields:
+    - label: H1 1 — Automatisation des processus & Intégration IA pour TPE/PME
+      name: texte_001
+      widget: string
+      required: false
+    - label: P 2 — Gagnez des dizaines d'heures chaque mois en transformant vos tâch
+      name: texte_002
+      widget: text
+      required: false
+    - label: H2 3 — 4 flux No-Code & IA prêts à transformer votre quotidien
+      name: texte_003
+      widget: string
+      required: false
+    - label: 'P 4 — Chaque flux élimine la double saisie, évite les erreurs humaines '
+      name: texte_004
+      widget: text
+      required: false
+    - label: H3 5 — OCR factures & synchronisation
+      name: texte_005
+      widget: string
+      required: false
+    - label: P 6 — Capture automatique de vos PDF fournisseurs dans vos boîtes mail,
+      name: texte_006
+      widget: text
+      required: false
+    - label: P 7 — Email reçu avec facture PDF
+      name: texte_007
+      widget: string
+      required: false
+    - label: P 8 — Extraction HT, TTC, TVA, IBAN
+      name: texte_008
+      widget: string
+      required: false
+    - label: P 9 — Pennylane + Dossier Drive mensuel
+      name: texte_009
+      widget: string
+      required: false
+    - label: H3 10 — Tri e-mails & pré-rédaction par IA
+      name: texte_010
+      widget: string
+      required: false
+    - label: P 11 — Un agent GPT qualifie la priorité des messages entrants, pré-rédi
+      name: texte_011
+      widget: text
+      required: false
+    - label: P 12 — Sentiment & priorité (URGENT / NORMAL)
+      name: texte_012
+      widget: string
+      required: false
+    - label: P 13 — Pré-rempli avec votre ton de voix
+      name: texte_013
+      widget: string
+      required: false
+    - label: P 14 — Clic unique pour envoi
+      name: texte_014
+      widget: string
+      required: false
+    - label: H3 15 — Cycle devis, factures & relances
+      name: texte_015
+      widget: string
+      required: false
+    - label: P 16 — Dès validation du devis, création automatique de l'acompte, notif
+      name: texte_016
+      widget: text
+      required: false
+    - label: P 17 — Déclenche acompte + dossier projet
+      name: texte_017
+      widget: string
+      required: false
+    - label: P 18 — Relance J-3, J+3, J+10 cordiale
+      name: texte_018
+      widget: string
+      required: false
+    - label: P 19 — Rapprochement bancaire instantané
+      name: texte_019
+      widget: string
+      required: false
+    - label: H3 20 — Onboarding RH & demandes de congés
+      name: texte_020
+      widget: string
+      required: false
+    - label: 'P 21 — Formulaire unique de recueil salarié : génération du contrat, tra'
+      name: texte_021
+      widget: text
+      required: false
+    - label: P 22 — Recueil sécurisé RGPD des pièces
+      name: texte_022
+      widget: string
+      required: false
+    - label: P 23 — Génération PDF + signature Yousign
+      name: texte_023
+      widget: string
+      required: false
+    - label: P 24 — Validation Slack/Mail et mise à jour planning
+      name: texte_024
+      widget: string
+      required: false
+    - label: H2 25 — Les outils leaders que j'interconnecte pour vous
+      name: texte_025
+      widget: string
+      required: false
+    - label: 'P 26 — Aucun remplacement forcé de vos logiciels habituels : je relie ce'
+      name: texte_026
+      widget: text
+      required: false
+    - label: H2 27 — Combien d'heures perdez-vous en paperasse inutile ?
+      name: texte_027
+      widget: string
+      required: false
+    - label: P 28 — Ajustez votre taille d'équipe et vos heures hebdomadaires consacr
+      name: texte_028
+      widget: text
+      required: false
+    - label: H3 29 — Votre retour sur investissement
+      name: texte_029
+      widget: string
+      required: false
+    - label: H2 30 — Tarifs clairs et sur-mesure pour chaque palier
+      name: texte_030
+      widget: string
+      required: false
+    - label: P 31 — Pas de charges sociales, pas d'engagement à long terme. Vous ne p
+      name: texte_031
+      widget: text
+      required: false
+    - label: H3 32 — Audit & Cartographie Process & IA
+      name: texte_032
+      widget: string
+      required: false
+    - label: P 33 — Identification chirurgicale des goulots d'étranglement et plan d'
+      name: texte_033
+      widget: string
+      required: false
+    - label: BUTTON 34 — Réserver l'audit
+      name: texte_034
+      widget: string
+      required: false
+    - label: H3 35 — Pack Automatisation Starter
+      name: texte_035
+      widget: string
+      required: false
+    - label: P 36 — Mise en place rapide d'un socle automatisé fiable et immédiatemen
+      name: texte_036
+      widget: string
+      required: false
+    - label: BUTTON 37 — Prendre RDV (30 min)
+      name: texte_037
+      widget: string
+      required: false
+    - label: H3 38 — Espace Connecté (Notion / Airtable)
+      name: texte_038
+      widget: string
+      required: false
+    - label: P 39 — Création de votre cockpit opérationnel centralisé sur Notion ou A
+      name: texte_039
+      widget: string
+      required: false
+    - label: BUTTON 40 — Déployer mon cockpit
+      name: texte_040
+      widget: string
+      required: false
+    - label: H3 41 — Accompagnement Horaire / TJM
+      name: texte_041
+      widget: string
+      required: false
+    - label: P 42 — Pour des projets évolutifs ou une assistance technique continue s
+      name: texte_042
+      widget: string
+      required: false
+    - label: BUTTON 43 — Discuter de mes besoins
+      name: texte_043
+      widget: string
+      required: false
+    - label: H2 44 — Prêt à libérer votre entreprise des tâches répétitives ?
+      name: texte_044
+      widget: string
+      required: false
+    - label: P 45 — Réservez 30 minutes gratuites avec Laurence BEDAULT. J'analyse av
+      name: texte_045
+      widget: text
+      required: false
+    - label: Image 46 — Laurence BEDAULT
+      name: image_046
+      widget: image
+      required: false
+    - label: A 47 — Ou par téléphone au 06.70.51.53.21
+      name: texte_047
+      widget: string
+      required: false
+  - file: content/gestion_sections.json
+    label: Gestion & RH
+    name: gestion_sections
+    format: json
+    fields:
+    - label: H1 1 — Votre bras droit de confiance en gestion administrative et RH pou
+      name: texte_001
+      widget: string
+      required: false
+    - label: P 2 — Allégez votre charge mentale, sécurisez votre trésorerie et consa
+      name: texte_002
+      widget: text
+      required: false
+    - label: Image 3 — Laurence BEDAULT - Fondatrice et Gestionnaire opérationnelle
+      name: image_003
+      widget: image
+      required: false
+    - label: P 4 — Laurence BEDAULT
+      name: texte_004
+      widget: string
+      required: false
+    - label: P 5 — Fondatrice & Gestionnaire opérationnelle
+      name: texte_005
+      widget: string
+      required: false
+    - label: H2 6 — 4 Piliers pour structurer votre quotidien
+      name: texte_006
+      widget: string
+      required: false
+    - label: P 7 — Chaque intervention est calibrée selon vos exigences métier. Cliq
+      name: texte_007
+      widget: text
+      required: false
+    - label: H3 8 — Secrétariat & Gestion Quotidienne
+      name: texte_008
+      widget: string
+      required: false
+    - label: P 9 — Mettez un terme à l'accumulation de papiers et aux boîtes mails d
+      name: texte_009
+      widget: text
+      required: false
+    - label: 'P 10 — Ce qui est inclus en immersion ou à distance :'
+      name: texte_010
+      widget: string
+      required: false
+    - label: P 11 — • Rapprochement bancaire mensuel et suivi des notes de frais de d
+      name: texte_011
+      widget: string
+      required: false
+    - label: P 12 — • Centralisation des justificatifs d'achat et relances fournisseu
+      name: texte_012
+      widget: text
+      required: false
+    - label: P 13 — • Mise en place de protocoles de classement partagés (Google Driv
+      name: texte_013
+      widget: text
+      required: false
+    - label: H3 14 — Trésorerie & Facturation BTP
+      name: texte_014
+      widget: string
+      required: false
+    - label: 'P 15 — Le nerf de la guerre : faire rentrer vos règlements plus vite tou'
+      name: texte_015
+      widget: text
+      required: false
+    - label: 'P 16 — Méthode de recouvrement amiable éprouvée :'
+      name: texte_016
+      widget: string
+      required: false
+    - label: 'P 17 — • Calendrier précis d''échéances (J-3 avant terme, J+5, J+15 avec '
+      name: texte_017
+      widget: text
+      required: false
+    - label: P 18 — • Gestion des situations de travaux au pourcentage d'avancement (
+      name: texte_018
+      widget: text
+      required: false
+    - label: 'P 19 — • Préservation absolue de la réputation artisanale : relance bien'
+      name: texte_019
+      widget: text
+      required: false
+    - label: H3 20 — Gestion RH & Recrutement
+      name: texte_020
+      widget: string
+      required: false
+    - label: P 21 — Dotez votre structure des compétences nécessaires sans vous perdr
+      name: texte_021
+      widget: text
+      required: false
+    - label: 'P 22 — Accompagnement de A à Z :'
+      name: texte_022
+      widget: string
+      required: false
+    - label: P 23 — • Présélection sur CV et entretiens de cadrage (motivation, préte
+      name: texte_023
+      widget: text
+      required: false
+    - label: P 24 — • Transmission des variables de paie (heures supplémentaires, pan
+      name: texte_024
+      widget: text
+      required: false
+    - label: P 25 — • Gestion de l'outillage et des dotations EPI lors de l'arrivée d
+      name: texte_025
+      widget: string
+      required: false
+    - label: H3 26 — Projets BTP & Appels d'Offres
+      name: texte_026
+      widget: string
+      required: false
+    - label: 'P 27 — Ne passez plus à côté de chantiers lucratifs par manque de temps '
+      name: texte_027
+      widget: text
+      required: false
+    - label: 'P 28 — Maîtrise technique et réglementaire :'
+      name: texte_028
+      widget: string
+      required: false
+    - label: P 29 — • Dépôt sécurisé sur les profils d'acheteurs (Chorus Pro, Maximil
+      name: texte_029
+      widget: text
+      required: false
+    - label: P 30 — • Vérification des attestations de vigilance fiscales et sociales
+      name: texte_030
+      widget: text
+      required: false
+    - label: P 31 — • Assemblage du mémoire technique et des fiches produits construc
+      name: texte_031
+      widget: string
+      required: false
+    - label: H2 32 — Deux modes d'intervention, une même exigence
+      name: texte_032
+      widget: string
+      required: false
+    - label: P 33 — Que vous préfériez une présence physique régulière dans vos locau
+      name: texte_033
+      widget: text
+      required: false
+    - label: H3 34 — Présentiel en Bretagne
+      name: texte_034
+      widget: string
+      required: false
+    - label: 'P 35 — Idéal pour les entreprises nécessitant une prise en main directe '
+      name: texte_035
+      widget: text
+      required: false
+    - label: H3 36 — Distanciel Sécurisé
+      name: texte_036
+      widget: string
+      required: false
+    - label: P 37 — Une organisation ultra-fluide pour les artisans nomades et PME pa
+      name: texte_037
+      widget: text
+      required: false
+    - label: H2 38 — Des formules adaptées à votre trésorerie
+      name: texte_038
+      widget: string
+      required: false
+    - label: P 39 — Aucun engagement rigide, aucun frais caché. Vous adaptez le temps
+      name: texte_039
+      widget: text
+      required: false
+    - label: H3 40 — Forfait Mensuel Sérénité
+      name: texte_040
+      widget: string
+      required: false
+    - label: P 41 — Pour stabiliser votre gestion et ne plus jamais vous laisser débo
+      name: texte_041
+      widget: string
+      required: false
+    - label: BUTTON 42 — Demander un devis Forfait Sérénité
+      name: texte_042
+      widget: string
+      required: false
+    - label: H3 43 — Intervention au Ticket & Urgence
+      name: texte_043
+      widget: string
+      required: false
+    - label: P 44 — Pour faire face à une surcharge imprévue, un dossier d'appel d'of
+      name: texte_044
+      widget: text
+      required: false
+    - label: BUTTON 45 — Évaluer mon besoin ponctuel
+      name: texte_045
+      widget: string
+      required: false
+    - label: H2 46 — Tout savoir sur mon accompagnement
+      name: texte_046
+      widget: string
+      required: false
+    - label: P 47 — Des réponses claires pour aborder sereinement votre délégation ad
+      name: texte_047
+      widget: string
+      required: false
+    - label: P 48 — Vous ne réglez que les heures réellement consacrées à vos dossier
+      name: texte_048
+      widget: text
+      required: false
+    - label: P 49 — Absolument pas ! Que ce soit pour une mission ponctuelle d'urgenc
+      name: texte_049
+      widget: text
+      required: false
+    - label: P 50 — Tout commence par notre échange de cadrage initial (30 min offert
+      name: texte_050
+      widget: text
+      required: false
+    - label: P 51 — Oui, absolument. Je collabore directement et en toute transparenc
+      name: texte_051
+      widget: text
+      required: false
+    - label: P 52 — Guillaume K.
+      name: texte_052
+      widget: string
+      required: false
+    - label: P 53 — Artisan dirigeant BTP & Rénovation — Ille-et-Vilaine (35)
+      name: texte_053
+      widget: string
+      required: false
+    - label: P 54 — Recommandée pour la gestion administrative, la relance trésorerie
+      name: texte_054
+      widget: string
+      required: false
+    - label: H2 55 — Prêt à déléguer votre paperasse et retrouver vos soirées ?
+      name: texte_055
+      widget: string
+      required: false
+    - label: P 56 — Réservez un échange découverte gratuit de 30 minutes. Je ferai le
+      name: texte_056
+      widget: text
+      required: false
+  - file: content/web_sections.json
+    label: Web & Digital
+    name: web_sections
+    format: json
+    fields:
+    - label: H1 1 — Chargée de Communication Externalisée —
+      name: texte_001
+      widget: string
+      required: false
+    - label: P 2 — Un accompagnement sur-mesure pour piloter votre communication san
+      name: texte_002
+      widget: text
+      required: false
+    - label: 'Image 3 — '
+      name: image_003
+      widget: image
+      required: false
+    - label: P 4 — Design épuré • Vitesse 95+ Mobile
+      name: texte_004
+      widget: string
+      required: false
+    - label: H2 5 — Pourquoi fuir les contrats de location web sur 48 mois ?
+      name: texte_005
+      widget: string
+      required: false
+    - label: P 6 — De nombreux dirigeants de TPE se retrouvent engagés dans des cont
+      name: texte_006
+      widget: text
+      required: false
+    - label: H2 7 — Mes 3 piliers d'intervention pour booster votre visibilité
+      name: texte_007
+      widget: string
+      required: false
+    - label: P 8 — J'interviens à vos côtés comme votre chargée de communication déd
+      name: texte_008
+      widget: text
+      required: false
+    - label: H3 9 — Communication Digitale & Réseaux Sociaux
+      name: texte_009
+      widget: string
+      required: false
+    - label: H3 10 — Sites Web & Présence en Ligne
+      name: texte_010
+      widget: string
+      required: false
+    - label: H3 11 — Communication Print & Supports Physiques
+      name: texte_011
+      widget: string
+      required: false
+    - label: H4 12 — Une organisation flexible selon votre rythme
+      name: texte_012
+      widget: string
+      required: false
+    - label: 'P 13 — Quelques heures par mois ou un forfait régulier : j''adapte ma pré'
+      name: texte_013
+      widget: text
+      required: false
+    - label: H2 14 — Méthodologie en 4 étapes claires
+      name: texte_014
+      widget: string
+      required: false
+    - label: P 15 — Pas de vocabulaire abscons ni d'échanges interminables. Un projet
+      name: texte_015
+      widget: text
+      required: false
+    - label: H3 16 — Cadrage & Charte
+      name: texte_016
+      widget: string
+      required: false
+    - label: P 17 — Entretien ciblé pour cerner vos prestations clés, vos cibles, vos
+      name: texte_017
+      widget: text
+      required: false
+    - label: P 18 — Questionnaire ciblé simple & échange téléphonique
+      name: texte_018
+      widget: string
+      required: false
+    - label: P 19 — Définition de l'arborescence du site (pages & menus)
+      name: texte_019
+      widget: string
+      required: false
+    - label: P 20 — Récupération de votre logo, photos et codes couleur
+      name: texte_020
+      widget: string
+      required: false
+    - label: H3 21 — Rédaction assistée IA
+      name: texte_021
+      widget: string
+      required: false
+    - label: P 22 — Vous manquez de temps pour rédiger ? Je combine l'IA pour générer
+      name: texte_022
+      widget: text
+      required: false
+    - label: P 23 — Optimisation des mots-clés locaux de votre zone
+      name: texte_023
+      widget: string
+      required: false
+    - label: P 24 — Rédaction accrocheuse adaptée à vos clients idéaux
+      name: texte_024
+      widget: string
+      required: false
+    - label: P 25 — Relecture conjointe et ajustements selon votre ton
+      name: texte_025
+      widget: string
+      required: false
+    - label: H3 26 — Conception responsive
+      name: texte_026
+      widget: string
+      required: false
+    - label: P 27 — Intégration soignée de votre site avec ergonomie mobile prioritai
+      name: texte_027
+      widget: text
+      required: false
+    - label: P 28 — Maquette interactive sur serveur test privé
+      name: texte_028
+      widget: string
+      required: false
+    - label: P 29 — Validation visuelle sur mobile, tablette et PC
+      name: texte_029
+      widget: string
+      required: false
+    - label: P 30 — Boutons d'appel direct 'Click-to-call' et formulaires
+      name: texte_030
+      widget: string
+      required: false
+    - label: H3 31 — Mise en ligne & Formation
+      name: texte_031
+      widget: string
+      required: false
+    - label: 'P 32 — Raccordement DNS, indexation Google Search Console, sécurisation '
+      name: texte_032
+      widget: text
+      required: false
+    - label: P 33 — Mise en ligne sous votre propre nom de domaine
+      name: texte_033
+      widget: string
+      required: false
+    - label: P 34 — Enregistrement d'un tuto vidéo 100% dédié à votre site
+      name: texte_034
+      widget: string
+      required: false
+    - label: P 35 — Fiche sécurisée récapitulative avec tous vos accès
+      name: texte_035
+      widget: string
+      required: false
+    - label: H2 36 — Pack Vitrine PME Sérénité
+      name: texte_036
+      widget: string
+      required: false
+    - label: 'P 37 — Conçu spécifiquement pour les artisans du bâtiment, prestataires '
+      name: texte_037
+      widget: text
+      required: false
+    - label: H3 38 — Pack Sérénité Clé en Main
+      name: texte_038
+      widget: string
+      required: false
+    - label: P 39 — Investissez une fois pour toutes dans votre vitrine, sans abonnem
+      name: texte_039
+      widget: string
+      required: false
+    - label: H2 40 — Questions fréquentes sur le Pack Web
+      name: texte_040
+      widget: string
+      required: false
+    - label: P 41 — Tout ce qu'il faut savoir avant de lancer votre projet en toute s
+      name: texte_041
+      widget: string
+      required: false
+    - label: H2 42 — Ce que disent les dirigeants accompagnés
+      name: texte_042
+      widget: string
+      required: false
+    - label: P 43 — « J’ai particulièrement apprécié le professionnalisme, la réactiv
+      name: texte_043
+      widget: text
+      required: false
+    - label: P 44 — « Laurence est une personne sérieuse, réactive et très profession
+      name: texte_044
+      widget: text
+      required: false
+    - label: P 45 — « Merci pour votre professionnalisme et votre réactivité. Avoir u
+      name: texte_045
+      widget: text
+      required: false
+    - label: H2 46 — Envie de structurer votre communication avec une experte dédiée ?
+      name: texte_046
+      widget: string
+      required: false
+    - label: P 47 — Échangeons pendant 30 minutes de vive voix. Je fais le point avec
+      name: texte_047
+      widget: text
+      required: false
+  - file: content/apropos_sections.json
+    label: À propos & Contact
+    name: apropos_sections
+    format: json
+    fields:
+    - label: P 1 — Depuis plus de 20 ans, j'accompagne sur le terrain les dirigeants
+      name: texte_001
+      widget: text
+      required: false
+    - label: H3 2 — +20 ans de terrain
+      name: texte_002
+      widget: string
+      required: false
+    - label: P 3 — Une expérience aguerrie des rouages administratifs, des pics de c
+      name: texte_003
+      widget: text
+      required: false
+    - label: H3 4 — Sans engagement RH
+      name: texte_004
+      widget: string
+      required: false
+    - label: 'P 5 — Zéro charges sociales cachées ni lourdeurs d''embauche : vous ne p'
+      name: texte_005
+      widget: text
+      required: false
+    - label: 'P 6 — Double ancrage : Proximité Bretonne & Déploiement France'
+      name: texte_006
+      widget: string
+      required: false
+    - label: Image 7 — Laurence BEDAULT - Fondatrice Synergies Humaines
+      name: image_007
+      widget: image
+      required: false
+    - label: H2 8 — Laurence BEDAULT
+      name: texte_008
+      widget: string
+      required: false
+    - label: P 9 — Fondatrice & Bras Droit Opérationnel
+      name: texte_009
+      widget: string
+      required: false
+    - label: H2 10 — Choisissez le canal qui vous convient le mieux
+      name: texte_010
+      widget: string
+      required: false
+    - label: P 11 — Planifiez immédiatement votre consultation stratégique de 30 minu
+      name: texte_011
+      widget: text
+      required: false
+    - label: H3 12 — Diagnostic Flash 30 minutes
+      name: texte_012
+      widget: string
+      required: false
+    - label: P 13 — Échange téléphonique ou visio convivial avec Laurence pour audite
+      name: texte_013
+      widget: text
+      required: false
+    - label: P 14 — Choisissez votre créneau directement dans mon agenda Calendly.
+      name: texte_014
+      widget: string
+      required: false
+    - label: P 15 — Les disponibilités sont actualisées sur Calendly. Votre rendez-vo
+      name: texte_015
+      widget: text
+      required: false
+    - label: Image 16 — Paysage breton, territoire d'intervention de Synergies Humai
+      name: image_016
+      widget: image
+      required: false
+    - label: H3 17 — Décrivez votre projet & vos besoins
+      name: texte_017
+      widget: string
+      required: false
+    - label: P 18 — Remplissez ce formulaire pour recevoir une estimation personnalis
+      name: texte_018
+      widget: string
+      required: false
+    - label: H2 19 — Intervention sur site ou à distance, selon votre organisation
+      name: texte_019
+      widget: string
+      required: false
+    - label: 'P 20 — Pour les entreprises locales, j’interviens régulièrement au cœur '
+      name: texte_020
+      widget: text
+      required: false
+    - label: P 21 — Bassin Rennais, La Chapelle-Chaussée, Dinan, Saint-Malo, Saint-Br
+      name: texte_021
+      widget: text
+      required: false
+    - label: 'P 22 — Nantes, Paris, Lyon, Bordeaux, Toulouse, Lille et toute localité '
+      name: texte_022
+      widget: text
+      required: false
+    - label: P 23 — Point central d'ancrage en Ille-et-Vilaine pour les missions régu
+      name: texte_023
+      widget: string
+      required: false
+    - label: H2 24 — Questions fréquentes sur mes modalités d'intervention
+      name: texte_024
+      widget: string
+      required: false
+    - label: P 25 — Comprendre le fonctionnement d'une assistante indépendante extern
+      name: texte_025
+      widget: string
+      required: false
+    - label: H2 26 — Retrouvez vos soirées et la sérénité de votre entreprise
+      name: texte_026
+      widget: string
+      required: false
+    - label: 'P 27 — Prenez rendez-vous directement avec moi ou appelez-moi au numéro '
+      name: texte_027
+      widget: string
+      required: false
+    - label: A 28 — Prendre RDV (30 min offertes)
+      name: texte_028
+      widget: string
+      required: false
+    - label: A 29 — 06.70.51.53.21
+      name: texte_029
+      widget: string
+      required: false
+  - file: content/mentions_sections.json
+    label: Mentions légales — contenu complémentaire
+    name: mentions_sections
+    format: json
+    fields:
+    - label: H1 1 — Mentions Légales
+      name: texte_001
+      widget: string
+      required: false
+    - label: 'P 2 — Conformément aux dispositions des articles 6-III et 19 de la Loi '
+      name: texte_002
+      widget: text
+      required: false
+    - label: P 3 — Entreprise Régie
+      name: texte_003
+      widget: string
+      required: false
+    - label: P 4 — EI Laurence BEDAULT immatriculée sous le code APE 82.11Z.
+      name: texte_004
+      widget: string
+      required: false
+    - label: P 5 — Protection RGPD
+      name: texte_005
+      widget: string
+      required: false
+    - label: P 6 — Données confidentielles, non cédées, conservées au maximum 3 ans.
+      name: texte_006
+      widget: string
+      required: false
+    - label: P 7 — Transparence Totale
+      name: texte_007
+      widget: string
+      required: false
+    - label: P 8 — Hébergement sécurisé & propriété intellectuelle protégée.
+      name: texte_008
+      widget: string
+      required: false
+    - label: H2 9 — Éditeur du site
+      name: texte_009
+      widget: string
+      required: false
+    - label: H2 10 — Hébergeur du site
+      name: texte_010
+      widget: string
+      required: false
+    - label: P 11 — Le présent site internet est hébergé sur des infrastructures d'hé
+      name: texte_011
+      widget: text
+      required: false
+    - label: P 12 — Netlify
+      name: texte_012
+      widget: string
+      required: false
+    - label: P 13 — www.netlify.com
+      name: texte_013
+      widget: string
+      required: false
+    - label: P 14 — Le site est publié sur la plateforme Netlify. Les informations re
+      name: texte_014
+      widget: text
+      required: false
+    - label: H2 15 — Propriété intellectuelle & Droits réservés
+      name: texte_015
+      widget: string
+      required: false
+    - label: H2 16 — Protection des Données Personnelles (RGPD) & Cookies
+      name: texte_016
+      widget: string
+      required: false
+    - label: P 17 — Les données transmises via les formulaires de qualification ou la
+      name: texte_017
+      widget: text
+      required: false
+    - label: 'P 18 — Les informations sont conservées pendant la durée rigoureusement '
+      name: texte_018
+      widget: text
+      required: false
+    - label: 'P 19 — Vous disposez d''un droit permanent d''accès, de rectification, de '
+      name: texte_019
+      widget: text
+      required: false
+    - label: P 20 — Le site utilise uniquement des traceurs strictement nécessaires à
+      name: texte_020
+      widget: text
+      required: false
+    - label: H2 21 — Liens hypertextes & Limitation de responsabilité
+      name: texte_021
+      widget: string
+      required: false
+    - label: P 22 — Le site Synergies Humaines peut comporter des liens hypertextes m
+      name: texte_022
+      widget: text
+      required: false
+    - label: H3 23 — Une question juridique ou administrative ?
+      name: texte_023
+      widget: string
+      required: false
+    - label: P 24 — Laurence BEDAULT est à votre écoute pour échanger en toute transp
+      name: texte_024
+      widget: text
+      required: false
