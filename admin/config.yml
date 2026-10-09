@@ -1070,6 +1070,30 @@ collections:
       name: texte_047
       widget: text
       required: false
+    - label: Tarifs — Agence classique (comparatif)
+      name: tarif_comparatif_agence
+      widget: string
+      required: false
+    - label: Tarifs — Synergies Humaines (comparatif)
+      name: tarif_comparatif_synergies
+      widget: string
+      required: false
+    - label: Tarifs — Modalités de règlement
+      name: tarif_modalites
+      widget: string
+      required: false
+    - label: Tarifs — Prix Pack Sérénité
+      name: tarif_pack
+      widget: string
+      required: false
+    - label: Tarifs — Précision sous le prix
+      name: tarif_pack_precision
+      widget: string
+      required: false
+    - label: Tarifs — Texte de la fenêtre de rendez-vous
+      name: tarif_rdv
+      widget: text
+      required: false
   - file: content/apropos_sections.json
     label: À propos & Contact
     name: apropos_sections
