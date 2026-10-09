@@ -45,5 +45,11 @@
   "texte_044": "Prêt à libérer votre entreprise des tâches répétitives ?",
   "texte_045": "Réservez 30 minutes gratuites avec Laurence BEDAULT. J'analyse avec vous vos points de friction actuels et j'identifie vos 2 premiers flux automatisables sans bouleverser vos habitudes.",
   "image_046": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxcXlhPOkr7eIrhPV_t1uM_KQy53kztW154_KYiOiiAMZE-CMx-6e3Xz44Oy88nrtYKS4O2X8UYRiwIdO-ntjQ3mZYJl92MqtWkoJ_ePqHvPTwlkoShbF5vW94OWctE2wkRMRfFU7vrWT4tr1nQN8jKfzRh-ijJPV0c3lLVysrTo58Py3XTLGI-pJu2CpoEnAQlwFTM1DqLy599A8k3BouSu6T303vFAthN49S0DtwBwBdVd1Poqe-wf5ovsjSIb02gn4",
-  "texte_047": "Ou par téléphone au 06.70.51.53.21"
+  "texte_047": "Ou par téléphone au 06.70.51.53.21",
+  "atomat_tarif_audit": "590 €",
+  "atomat_tarif_starter": "590 €",
+  "atomat_tarif_connecte": "790 €",
+  "atomat_tarif_horaire": "85 €",
+  "atomat_tarif_tjm": "600 €",
+  "atomat_tarif_remise": "150 € HT déduits pour toute commande d’implémentation du Pack Starter"
 }
