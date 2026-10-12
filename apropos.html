@@ -219,7 +219,7 @@
               Remplissez ce formulaire pour recevoir une estimation personnalisée sous 24h ouvrées.
             </p>
 </div>
-<form action="/merci.html" class="flex flex-col gap-space-md" data-netlify="true" id="contact-qualification-form" method="POST" name="contact" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="contact"/><p aria-hidden="true" class="hidden"><label>Ne pas remplir : <input autocomplete="off" name="bot-field" tabindex="-1"/></label></p>
+<form action="/" class="flex flex-col gap-space-md" data-netlify="true" id="contact-qualification-form" method="POST" name="contact" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="contact"/><p aria-hidden="true" class="hidden"><label>Ne pas remplir : <input autocomplete="off" name="bot-field" tabindex="-1"/></label></p>
 <!-- Grid 2 Cols: Identity -->
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
 <div>
@@ -286,7 +286,7 @@
 <span class="material-symbols-outlined text-xl">send</span>
               Envoyer ma demande de contact
             </button>
-<!-- Success Feedback Flash -->
+<div id="contact-form-feedback" class="hidden rounded-xl p-4 text-sm font-semibold" role="status" aria-live="polite"></div>
 </form>
 </div>
 </div>
@@ -453,4 +453,39 @@
 </div>
 </section>
 </div></main><footer class="w-full bg-navy-deep text-surface py-space-xl"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-md"><span class="font-headline-sm text-headline-sm text-surface tracking-wider font-bold uppercase truncate" style="white-space: nowrap;">SYNERGIES HUMAINES</span></div><p class="font-body-sm text-body-sm text-surface-container-high leading-relaxed">Conseil en organisation, performance administrative, automatisation No-Code &amp; IA et création digitale sur-mesure pour PME et indépendants par Laurence BEDAULT.</p></div><div><span class="block font-headline-sm text-headline-sm text-surface mb-space-md">Pôles d'expertise</span><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class=""><a class="hover:text-coral-cta transition-colors" data-path="automatisation-et-ia" href="atomat.html">IA &amp; No-Code opérationnel</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="gestion-et-rh" href="gestion.html">Gestion administrative &amp; Pré-compta</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="gestion-et-rh" href="gestion.html">RH, Recrutement &amp; Onboarding</a></li><li class=""><a class="hover:text-coral-cta transition-colors" data-path="web-et-digital" href="web.html">Sites Web vitrines &amp; Outils Métier</a></li></ul></div><div><span class="block font-headline-sm text-headline-sm text-surface mb-space-md">Zone d'intervention</span><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high"><li class="">Présentiel : Rennes, Ille-et-Vilaine (35)</li><li class="">Présentiel : Côtes-d'Armor (22)</li><li class="">Distanciel : France entière &amp; DOM-TOM</li><li class="">Audit flash &amp; Immersion sur site</li></ul></div><div><span class="block font-headline-sm text-headline-sm text-surface mb-space-md">Coordonnées directes</span><ul class="space-y-space-sm font-body-sm text-body-sm text-surface-container-high"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">call</span><a class="hover:text-coral-cta transition-colors" data-cms-href="phone" href="tel:0670515321">06.70.51.53.21</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">mail</span><a class="hover:text-coral-cta transition-colors" data-cms-href="email" href="mailto:laurence@synergieshumaines.com">laurence@synergieshumaines.com</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">location_on</span><span class="">La Chapelle-Chaussée (35)</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-coral-cta text-base">schedule</span><span class="">Du lundi au vendredi : 8h30 - 18h30</span></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-surface-container-high border-t border-white/10"><p class="">© 2025 Synergies Humaines - Laurence BEDAULT. Tous droits réservés.</p><div class="flex items-center gap-space-md"><a class="hover:text-coral-cta transition-colors" data-path="mentions-legales" href="mentions.html">Mentions Légales</a><a class="hover:text-coral-cta transition-colors" data-path="politique-de-confidentialite" href="mentions.html#rgpd">Politique de Confidentialité</a></div></div></div></footer><!-- GLOBAL SCRIPT FOR FULL INTERACTIVITY --><script>(function(){const toggle=document.getElementById('mobile-nav-toggle');const menu=document.getElementById('mobile-nav-menu');if(toggle&&menu){toggle.addEventListener('click',()=>{const opened=menu.classList.toggle('hidden')===false;toggle.setAttribute('aria-expanded',String(opened));});}document.querySelectorAll('.faq-toggle').forEach(button=>{button.setAttribute('aria-expanded','false');button.addEventListener('click',()=>{const content=button.nextElementSibling;const wasHidden=content.classList.contains('hidden');document.querySelectorAll('.faq-content').forEach(el=>el.classList.add('hidden'));document.querySelectorAll('.faq-toggle').forEach(el=>el.setAttribute('aria-expanded','false'));document.querySelectorAll('.faq-icon').forEach(el=>el.classList.remove('rotate-180'));if(wasHidden){content.classList.remove('hidden');button.setAttribute('aria-expanded','true');const icon=button.querySelector('.faq-icon');if(icon)icon.classList.add('rotate-180');}});});})();</script>
+<script>
+(function () {
+  const form = document.getElementById('contact-qualification-form');
+  const button = document.getElementById('submit-contact-btn');
+  const feedback = document.getElementById('contact-form-feedback');
+  if (!form || !button || !feedback) return;
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    button.disabled = true;
+    button.setAttribute('aria-busy', 'true');
+    feedback.className = 'rounded-xl p-4 text-sm font-semibold bg-surface-container text-navy-deep';
+    feedback.textContent = 'Envoi de votre demande en cours…';
+    try {
+      const data = new FormData(form);
+      data.set('form-name', 'contact');
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      feedback.className = 'rounded-xl p-4 text-sm font-semibold bg-emerald-50 text-emerald-900';
+      feedback.textContent = 'Merci ! Votre demande a été envoyée. Je reviendrai vers vous dès que possible.';
+      form.reset();
+    } catch (error) {
+      feedback.className = 'rounded-xl p-4 text-sm font-semibold bg-red-50 text-red-800';
+      feedback.textContent = 'Votre demande n’a pas pu être envoyée. Merci de réessayer ou de me contacter à laurence@synergieshumaines.com.';
+    } finally {
+      button.disabled = false;
+      button.removeAttribute('aria-busy');
+    }
+  });
+})();
+</script>
 <script src="js/content-loader.js"></script><script defer="" src="/js/sections-loader.js"></script></body></html>
