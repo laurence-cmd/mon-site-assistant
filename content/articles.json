@@ -13,7 +13,9 @@
       "author": "Laurence BEDAULT",
       "reading_time": "6 min",
       "featured": true,
-      "body": "Le contenu complet de cet article sera ensuite administrable directement depuis Decap CMS."
+      "body": "Le contenu complet de cet article sera ensuite administrable directement depuis Decap CMS.",
+      "status": "draft",
+      "tags": []
     }
   ]
 }

@@ -102,6 +102,32 @@ collections:
         - RH & Recrutement
         - Web & Visibilité
         - Réforme Réglementaire
+      - label: Tags (10 maximum)
+        name: tags
+        widget: list
+        required: false
+        max: 10
+        field:
+          label: Mot-clé
+          name: tag
+          widget: string
+      - label: Statut de publication
+        name: status
+        widget: select
+        options:
+        - label: Brouillon (invisible sur le site)
+          value: draft
+        - label: Publié / programmé
+          value: published
+        default: draft
+      - label: Date et heure de publication (heure française)
+        name: publish_at
+        widget: datetime
+        required: false
+        date_format: DD/MM/YYYY
+        time_format: HH:mm
+        format: YYYY-MM-DDTHH:mm:ss
+        hint: Si la date est future, l'article restera invisible jusqu'à cette date (heure de Paris). Le fichier est cependant envoyé sur GitHub dès l'enregistrement.
       - label: Date
         name: date
         widget: datetime
