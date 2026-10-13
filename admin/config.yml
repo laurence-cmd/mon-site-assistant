@@ -107,10 +107,7 @@ collections:
         widget: list
         required: false
         max: 10
-        field:
-          label: Mot-clé
-          name: tag
-          widget: string
+        hint: Saisissez les mots-clés séparés par des virgules, sans #. Exemple : NoCode, IA, Productivité
       - label: Statut de publication
         name: status
         widget: select
