@@ -1,21 +1,40 @@
 {
   "articles": [
     {
-      "title": "Facturation Électronique 2026 : Le Guide Pratique pour TPE, PME et Artisans",
-      "seo_title": "Facturation électronique 2026 : guide TPE et PME",
+      "reading_time": "2 min",
+      "excerpt": "Évolution du métier : Dépassement de la simple exécution (saisie, relances, classement) pour devenir un véritable moteur d'efficacité opérationnelle.\n\nSynergie No-Code & IA : Utilisation des automatisations pour éradiquer les tâches répétitives, la double saisie et les oublis (CRM, relances, pièces comptables).\n\nValeur stratégique : Positionnement d'assistante freelance comme partenaire d'optimisation pour structurer l'organisation des TPE/PME, libérer du temps stratégique au dirigeant et faire passer un cap à son entreprise.",
+      "body": "Mon métier n'est pas seulement de faire à la place de mes clients. C'est aussi de leur faire gagner du temps.\n\nPendant longtemps, le rôle d'une assistante indépendante s'est résumé à exécuter : saisir des factures, relancer des devis, classer des documents ou planifier des rendez-vous. C'est le cœur historique de notre activité, et la rigueur y demeure indispensable. Mais aujourd'hui, les besoins des dirigeants évoluent vers plus d'agilité. La vraie valeur ajoutée ne réside plus uniquement dans le temps brut consacré à exécuter une tâche, mais dans l'efficacité du système mis en place pour la simplifier.\n\nC'est là que le No-Code et l'IA changent la donne en devenant un prolongement naturel de notre métier.\nComprendre ces technologies ne signifie pas remplacer l'humain, mais plutôt automatiser tout ce qui est répétitif. Un formulaire qui alimente directement un CRM, un suivi de dossier qui informe automatiquement les parties prenantes ou une relance de pièce comptable qui se déclenche toute seule permettent d'éliminer la double saisie et d'éviter les oublis.\n\nEn combinant l'organisation administrative, la présence de terrain et la maîtrise des automatisations, une assistante freelance devient une véritable partenaire d'optimisation pour les TPE et PME. Nous ne sommes plus seulement là pour alléger votre quotidien, mais pour le structurer et vous faire passer un cap.",
+      "publish_at": "2026-10-14T07:00:00",
+      "image_alt": "logo-synergies-humaines",
+      "author": "Laurence BEDAULT",
+      "slug": "assistante-independante-nocode-ia-bretagne",
+      "featured": false,
+      "status": "published",
+      "seo_title": "Assistante Indépendante, IA & No-Code en Bretagne : Du Secrétariat à l'Optimisation",
+      "title": "Mon métier n'est pas seulement de faire à la place de mes clients. C'est aussi de leur faire gagner du temps.",
+      "tags": [
+        "#AssistanteFreelance #NoCode #IA #Productivite #GestionDEntreprise #SynergiesHumaines"
+      ],
+      "seo_description": "Découvrez comment l'alliance de la gestion administrative et des technologies IA/No-Code transforme le rôle d'assistante freelance en véritable partenaire d'optimisation pour les TPE et PME en Bretagne.",
+      "image": "/assets/images/logo-sans-carre-redimen.jpg",
+      "category": "No-Code & IA"
+    },
+    {
+      "reading_time": "6 min",
       "excerpt": "Un guide pratique pour comprendre la réforme, anticiper les changements et préparer votre organisation.",
-      "seo_description": "Comprenez la facturation électronique et préparez votre TPE ou PME avec un guide pratique, clair et orienté actions.",
-      "slug": "facturation-electronique-2026",
-      "category": "Réforme Réglementaire",
-      "date": "2025-03-18T00:00:00.000Z",
-      "image": "",
+      "body": "Le contenu complet de cet article sera ensuite administrable directement depuis Decap CMS.",
       "image_alt": "Illustration sur la facturation électronique",
       "author": "Laurence BEDAULT",
-      "reading_time": "6 min",
+      "slug": "facturation-electronique-2026",
       "featured": true,
-      "body": "Le contenu complet de cet article sera ensuite administrable directement depuis Decap CMS.",
+      "date": "2025-03-18T00:00:00.000Z",
       "status": "draft",
-      "tags": []
+      "seo_title": "Facturation électronique 2026 : guide TPE et PME",
+      "title": "Facturation Électronique 2026 : Le Guide Pratique pour TPE, PME et Artisans",
+      "tags": [],
+      "seo_description": "Comprenez la facturation électronique et préparez votre TPE ou PME avec un guide pratique, clair et orienté actions.",
+      "image": "",
+      "category": "Réforme Réglementaire"
     }
   ]
 }
