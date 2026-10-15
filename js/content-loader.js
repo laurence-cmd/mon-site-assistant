@@ -6,8 +6,12 @@
     return response.json();
   }
 
+  // Lancer les deux requêtes ensemble pour éviter un chargement en cascade.
+  const siteRequest = getJSON('/content/site.json');
+  const homeRequest = getJSON('/content/home.json');
+
   try {
-    const site = await getJSON('/content/site.json');
+    const site = await siteRequest;
 
     document.querySelectorAll('[data-cms-site="phone"]').forEach(el => {
       el.textContent = site.phone;
@@ -43,14 +47,15 @@
   }
 
   try {
-    const home = await getJSON('/content/home.json');
+    const home = await homeRequest;
     const title = document.querySelector('[data-cms="hero-title"]');
     const desc = document.querySelector('[data-cms="hero-desc"]');
+    const normalize = value => value.replace(/\s+/g, ' ').trim();
 
     if (title && typeof home.hero_title === 'string') {
       const parts = home.hero_title.split('|').map(part => part.trim());
 
-      if (parts.length === 3) {
+      if (parts.length === 3 && normalize(title.textContent) !== normalize(parts.join(' '))) {
         title.replaceChildren();
 
         title.append(document.createTextNode(parts[0] + ' '));
@@ -67,12 +72,12 @@
           emphasis,
           document.createTextNode(' ' + parts[2])
         );
-      } else {
+      } else if (parts.length !== 3 && normalize(title.textContent) !== normalize(home.hero_title)) {
         title.textContent = home.hero_title;
       }
     }
 
-    if (desc && typeof home.hero_desc === 'string') {
+    if (desc && typeof home.hero_desc === 'string' && normalize(desc.textContent) !== normalize(home.hero_desc)) {
       desc.textContent = home.hero_desc;
     }
   } catch (error) {
