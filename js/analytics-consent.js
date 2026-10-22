@@ -3,6 +3,7 @@
   'use strict';
   if (window.shAnalyticsConsent) return;
   const measurementId = 'G-XCK6LKPGGQ';
+  const googleTagId = 'GT-5M8LKHV8';
   const storageKey = 'sh-analytics-consent-v1';
   const lifetime = 180 * 24 * 60 * 60 * 1000;
   const production = ['synergieshumaines.com', 'www.synergieshumaines.com'].includes(location.hostname);
@@ -50,7 +51,7 @@
     const tag = document.createElement('script');
     tag.async = true;
     tag.id = 'sh-google-analytics';
-    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + googleTagId;
     document.head.appendChild(tag);
   }
 
