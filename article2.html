@@ -153,4 +153,4 @@ function parisPublicationMs(value){
   const content=document.createElement('div');body.append(content);
   if(window.marked&&window.DOMPurify){content.innerHTML=DOMPurify.sanitize(marked.parse(a.body||''));}else{content.textContent=a.body||'Le contenu de cet article est en cours de rédaction.';}
  }catch(e){console.error(e);title.textContent='Article indisponible';body.textContent='Impossible de charger cet article pour le moment.';}
-})();</script></body></html>
+})();</script><script defer src="/js/analytics-consent.js"></script></body></html>
