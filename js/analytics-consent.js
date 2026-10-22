@@ -41,7 +41,7 @@
       ad_user_data: 'denied', ad_personalization: 'denied'
     });
     window.gtag('js', new Date());
-    window.gtag('config', measurementId, {
+    window.gtag('config', googleTagId, {
       allow_google_signals: false, allow_ad_personalization_signals: false,
       cookie_expires: 180 * 24 * 60 * 60,
       cookie_update: false,
