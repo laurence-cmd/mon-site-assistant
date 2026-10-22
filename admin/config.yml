@@ -959,8 +959,12 @@ collections:
     name: web_sections
     format: json
     fields:
-    - label: H1 1 — Chargée de Communication Externalisée —
+    - label: Titre principal — métier
       name: texte_001
+      widget: string
+      required: false
+    - label: Titre principal — projets (partie colorée)
+      name: titre_projets
       widget: string
       required: false
     - label: P 2 — Un accompagnement sur-mesure pour piloter votre communication san
